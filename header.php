@@ -12,7 +12,6 @@
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="<?php bloginfo('template_directory');?>/assets/css/front.css" rel="stylesheet">
@@ -28,23 +27,30 @@
 
   <body>
 
-    <nav class="navbar-masthead navbar-fixed-top">
-      <div class="container-fluid text-center">
-        <a class="navbar-item active" href="#">Abeille</a>
-        <a class="navbar-item" href="#">Yrityksille</a>
-        <a class="navbar-item" href="#">Kiltalaisille</a>
-        <a class="navbar-item" href="#">Yhteystiedot</a>
-      </div>
+  <nav class="navbar navbar-inverse navbar-toggleable-sm fixed-top">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a href="/" class="navbar-brand d-flex mr-auto">
+      <img alt="" height="20" src="<?php bloginfo('template_directory');?>/assets/images/inkulogo-valko.png">
+    </a>
+    <div class="navbar-collapse collapse text-center" id="collapsingNavbar">
+      <ul class="navbar-nav mx-auto w-100 justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Abeille</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Yrityksille</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Kiltalaisille</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Yhteystiedot</a>
+        </li>
+    </div>
+  </nav>
 
-      <div class="container-fluid" style="position:absolute; top:0;">
-        <a class="navbar-brand" href="#">
-          <img alt="Inkubio" height="20" src="<?php bloginfo('template_directory');?>/assets/images/inkulogo-valko.png">
-        </a>
-      </div>
-    </nav>
 
-    <div class="container">
-      <div class="blog-header text-center">
-        <h1 class="blog-title">Suur-Inkubio</h1>
-        <p class="lead blog-description">Gotta get dat 75 fuksia</p>
-      </div>
+
+    
