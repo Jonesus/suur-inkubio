@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=600, initial-scale=0.5.5.5.5.5">
+    <meta name="viewport" content="width=400, initial-scale=0.5">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
@@ -26,7 +26,8 @@
   </head>
 
   <body>
-
+  
+  <!-- Navbar -->
   <nav class="navbar navbar-inverse navbar-toggleable-sm fixed-top">
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
       <span class="navbar-toggler-icon"></span>
@@ -50,7 +51,4 @@
         </li>
     </div>
   </nav>
-
-
-
-    
+  <!-- End navbar -->

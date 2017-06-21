@@ -1,4 +1,4 @@
-
+<!-- First section -->
 <div class="page-section bg-image">
   <div class="container-fluid">
     <div class="row">
@@ -11,7 +11,9 @@
     </div>
   </div>
 </div>
+<!-- End first section -->
 
+<!-- Second section -->
 <div class="page-section">
   <div class="container-fluid">
     <div class="row row-content justify-content-center">
@@ -32,6 +34,4 @@
     </div>
   </div>
 </div>
-
-
-
+<!-- End second section -->
