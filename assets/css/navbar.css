@@ -1,0 +1,35 @@
+/*
+ * Navbar CSS
+ */
+
+.navbar {
+  background-color: rgb(0,133,66);
+}
+
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand>img {
+  height: 100%;
+  padding-top: 13px;
+  padding-bottom: 5px;
+  width: 50px;
+}
+
+/* Nav links */
+.nav-item {
+  font-weight: 500;
+  font-size: 18px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #cdddeb;
+}
+.nav-item:hover,
+.nav-item:focus {
+  color: #fff;
+  background-color: rgba(255,255,255,0.3);
+  border-radius: 5px;
+  text-decoration: none;
+}
+
