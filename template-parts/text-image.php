@@ -1,5 +1,4 @@
 
-<!-- Second section -->
 <div class="page-section">
 
   <?php $i = 0; foreach($args["rows"] as $row) { $i++;
@@ -31,4 +30,3 @@
   } ?>
 
 </div>
-<!-- End second section -->

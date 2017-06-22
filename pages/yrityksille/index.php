@@ -1,9 +1,13 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>tesstiiiiiii</title>
-  </head>
-  <body>
-    hei
-  </bod>
-</html>
+<!-- Necessary 'import' for all subpages -->
+<?php require('../../../../../wp-blog-header.php'); ?>
+
+
+<?php get_header(); ?>
+
+<?php add_template("text-image.php", ["rows" => [ ["Firmat on kivoi", "frontpage/poutsi.jpg"],
+                                                  ["Antakaa meille fygyy", "frontpage/poutsi.jpg"],
+                                                  ["Muuten\nvedetää teit lättyy", "frontpage/genes.jpg"],
+                                                ]]); ?>
+
+<?php get_footer(); ?>
+
