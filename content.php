@@ -2,11 +2,9 @@
 <div class="page-section bg-image" style="background-image: url(<?php bloginfo('template_directory');?>/assets/images/frontpage/etu.jpg);">
 
   <div class="row">
-    <div class="col-lg-12">
-      <div class="title-text text-center">
-        <h1 class="blog-title">Suur-Inkubio</h1>
-        <p class="lead ingress-text">Gotta get dat 75 fuksia</p>
-      </div>
+    <div class="col-lg-12 title-text text-center">
+      <h1>Suur-Inkubio</h1>
+      <p class="ingress-text">Gotta get dat 75 fuksia</p>
     </div>
   </div>
 
