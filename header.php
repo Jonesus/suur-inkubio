@@ -14,8 +14,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
 
     <!-- Custom styles for this template -->
-    <link href="<?php bloginfo('template_directory');?>/assets/css/front.css" rel="stylesheet">
-    <link href="<?php bloginfo('template_directory');?>/assets/css/navbar.css" rel="stylesheet">
+    <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/assets/css/general.css">
+    <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/assets/css/navbar.css">
+    <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/assets/css/text.css">
 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -50,6 +51,7 @@
         <li class="nav-item">
           <a class="nav-link" href="/yhteystiedot/">Yhteystiedot</a>
         </li>
+       </ul>
     </div>
   </nav>
   <!-- End navbar -->

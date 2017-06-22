@@ -1,0 +1,33 @@
+/*
+ * Single page app styling
+ */
+
+.page-section {
+  padding: 10vh;
+  background-color: #ddd;
+  background-image: none;
+}
+
+.row {
+  margin: 5vh;
+}
+
+
+
+/*
+ * Image styles
+ */
+
+.bg-image {
+  min-height: 600px;
+  background-image: none;
+  background-repeat: no-repeat;
+  background-attachment: center;
+  background-position: center;
+  background-size: cover;
+}
+
+.img-fluid {
+  max-height: 300px;
+}
+
