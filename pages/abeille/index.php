@@ -1,9 +1,8 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>test</title>
-  </head>
-  <body>
-    moi
-  </bod>
-</html>
+<?php require('../../../../../wp-blog-header.php'); ?>
+
+
+<?php get_header(); ?>
+
+
+
+<?php get_footer(); ?>
