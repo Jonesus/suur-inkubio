@@ -32,22 +32,22 @@
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a href="/" class="navbar-brand d-flex mr-auto">
+    <a href="/inkubio/" class="navbar-brand d-flex mr-auto">
       <img alt="" height="20" src="<?php bloginfo('template_directory');?>/assets/images/inkulogo-valko.png">
     </a>
     <div class="navbar-collapse collapse text-center" id="collapsingNavbar">
       <ul class="navbar-nav mx-auto w-100 justify-content-center">
         <li class="nav-item">
-          <a class="nav-link" href="#">Abeille</a>
+          <a class="nav-link" href="/abeille/">Abeille</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Yrityksille</a>
+          <a class="nav-link" href="/yrityksille/">Yrityksille</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Kiltalaisille</a>
+          <a class="nav-link" href="/kiltalaisille/">Kiltalaisille</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Yhteystiedot</a>
+          <a class="nav-link" href="/yhteystiedot/">Yhteystiedot</a>
         </li>
     </div>
   </nav>
