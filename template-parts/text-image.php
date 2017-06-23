@@ -7,7 +7,7 @@
     <!-- Text left, image right -->
     <div class="row justify-content-center">
       <div class="col-md-6 col-lg-4 align-self-center text-center">
-        <p class="paragraph-text text-justify"><?php echo $row[0] ?></p>
+        <p class="paragraph-text text-justify"><?php echo $row[0]?></p>
       </div>
       <div class="col-md-6 col-lg-4 align-self-center text-center">
         <img class="rounded-circle img-fluid" alt="" src="<?php echo $basedir . "/assets/images/" . $row[1]?>" >
@@ -22,7 +22,7 @@
         <img class="rounded-circle img-fluid" alt="" src="<?php echo $basedir . "/assets/images/" . $row[1]?>">
       </div>
       <div class="col-md-6 col-lg-4 align-self-center text-center">
-        <p class="paragraph-text text-justify"><?php echo $row[0] ?></p>
+        <p class="paragraph-text text-justify"><?php echo $row[0]?></p>
       </div>
     </div>
 
