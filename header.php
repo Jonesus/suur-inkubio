@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
 
     <!-- Custom styles for this template -->
-    <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/assets/css/general.css">
+    <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/style.css">
     <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/assets/css/navbar.css">
     <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/assets/css/text.css">
 
