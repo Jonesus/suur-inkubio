@@ -1,4 +1,4 @@
-<!-- First section -->
+<!-- Begin section -->
 <div class="page-section bg-image" style="<?php
         $imgname = $args["bg-img"];
         echo "background-image: url($basedir/assets/images/$imgname);";
@@ -12,3 +12,4 @@
   </div>
 
 </div>
+<!-- End section -->
