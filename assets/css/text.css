@@ -11,6 +11,24 @@ h1 {
   text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
 
+h3 {
+  margin: 5px;
+  padding: 5px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.5em;
+  font-weight: normal;
+  color: #555;
+}
+
+h4 {
+  font-size: 1.2em;
+}
+
+h5 {
+  font-size: 1em;
+  word-wrap: break-word;
+}
+
 .title-text {
     position: relative;
     margin-top: 40vh;
