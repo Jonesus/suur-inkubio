@@ -2,12 +2,13 @@
  * Footer
  */
 
-.blog-footer {
+.footer {
   padding: 40px 0;
   color: #999;
   text-align: center;
   background-color: #006631;
+  bottom: 0;
 }
-.blog-footer p:last-child {
+.footer p:last-child {
   margin-bottom: 0;
 }

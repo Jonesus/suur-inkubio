@@ -1,0 +1,64 @@
+/*
+ * Sidebar
+ */
+
+.sidebar {
+  position: fixed;
+  top: 63px;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 20px;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  background-color: #aaa;
+}
+
+/* Sidebar navigation */
+.sidebar {
+  padding-left: 20px;
+  padding-right: 0;
+}
+
+.sidebar-toggle {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+.sidebar .nav {
+  margin-bottom: 20px;
+}
+
+.sidebar .nav-item {
+  width: 100%;
+}
+
+.sidebar .nav-item + .nav-item {
+  margin-left: 0;
+}
+
+.sidebar .nav-link {
+  border-radius: 0;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+
+
+/* Sick animations */
+.rotate{
+    -moz-transition: all 400ms;
+    -webkit-transition: all 400ms;
+    transition: all 400ms;
+}
+
+.rotate.down{
+    -ms-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    transform:rotate(90deg);
+}
+

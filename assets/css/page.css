@@ -1,0 +1,34 @@
+h1 {
+  margin: 10px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 4em;
+  font-weight: normal;
+  color: #333;
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+  border-bottom: 2px solid black;
+}
+
+p {
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.page-bg-image {
+  min-height: 400px;
+  background-image: none;
+  background-repeat: no-repeat;
+  background-attachment: center;
+  background-position: center;
+  background-size: cover;
+  display: block;
+  margin-left: -15px; /* Dirty hacks for full-width image */
+  margin-right: -15px; /* Dirty hacks for full-width image */
+}
+
+.below-image {
+    margin-top: -100px;
+    margin-bottom: 10px;
+    padding: 40px;
+    padding-top: 20px;
+    background-color: rgb(240,240,240);
+}

@@ -23,13 +23,13 @@
   padding-left: 5px;
   padding-right: 5px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #cdddeb;
 }
-.nav-item:hover,
-.nav-item:focus {
-  color: #fff;
+
+.navbar li.active,
+.navbar .nav-item:hover,
+.navbar .nav-item:focus {
+  color: #ffffff;
   background-color: rgba(255,255,255,0.3);
   border-radius: 5px;
-  text-decoration: none;
 }
 
