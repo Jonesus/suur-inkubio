@@ -6,6 +6,9 @@ Version: 0.0.1
 Tags: Suur-Inkubio, #FuckDrupal
 */
 
+body {
+  padding-top: 63px; /* Navbar height */
+}
 
 
 /*
@@ -18,8 +21,13 @@ Tags: Suur-Inkubio, #FuckDrupal
   background-image: none;
 }
 
-.row {
+.padded-row {
   margin: 5vh;
+}
+
+.row-no-padding > [class*="col-"] {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 
 
