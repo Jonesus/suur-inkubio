@@ -1,6 +1,6 @@
 
   <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/assets/css/footer.css">
-  <footer class="blog-footer">
+  <footer class="footer">
     <p>&copy; Inkubio ry</p>
     <p>All rights arrested</p>
   </footer>
