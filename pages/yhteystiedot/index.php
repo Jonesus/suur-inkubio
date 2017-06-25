@@ -4,57 +4,11 @@
 
 <?php get_header(); ?>
 
-<?php add_template("image-row.php", ["rows" => [[["imgpath" => "hallitus/puheenjohtaja.jpg",
-                                                  "name" => "Tuomas Poutanen",
-                                                  "position" => "Puheenjohtaja",
-                                                  "email" => "tuomas.poutanen@aalto.fi"],
-                                                 ["imgpath" => "hallitus/tiedotusmestari.jpg",
-                                                  "name" => "Veera Itälinna",
-                                                  "position" => "Tiedotusmestari",
-                                                  "email" => "veera.italinna@aalto.fi"],
-                                                 ["imgpath" => "hallitus/nettisivuvastaava.jpg",
-                                                  "name" => "Joonas Palosuo",
-                                                  "position" => "Nettisivuvastaava",
-                                                  "email" => "joonas.palosuo@aalto.fi"]],
-
-                                                [["imgpath" => "hallitus/puheenjohtaja.jpg",
-                                                  "name" => "Tuomas Poutanen",
-                                                  "position" => "Puheenjohtaja",
-                                                  "email" => "tuomas.poutanen@aalto.fi"],
-                                                 ["imgpath" => "hallitus/tiedotusmestari.jpg",
-                                                  "name" => "Veera Itälinna",
-                                                  "position" => "Tiedotusmestari",
-                                                  "email" => "veera.italinna@aalto.fi"],
-                                                 ["imgpath" => "hallitus/tiedotusmestari.jpg",
-                                                  "name" => "Veera Itälinna",
-                                                  "position" => "Tiedotusmestari",
-                                                  "email" => "veera.italinna@aalto.fi"],
-                                                 ["imgpath" => "hallitus/nettisivuvastaava.jpg",
-                                                  "name" => "Joonas Palosuo",
-                                                  "position" => "Nettisivuvastaava",
-                                                  "email" => "joonas.palosuo@aalto.fi"]],
-
-                                                [["imgpath" => "hallitus/tiedotusmestari.jpg",
-                                                  "name" => "Veera Itälinna",
-                                                  "position" => "Tiedotusmestari",
-                                                  "email" => "veera.italinna@aalto.fi"],
-                                                 ["imgpath" => "hallitus/nettisivuvastaava.jpg",
-                                                  "name" => "Joonas Palosuo",
-                                                  "position" => "Nettisivuvastaava",
-                                                  "email" => "joonas.palosuo@aalto.fi"]],
-
-                                                [["imgpath" => "hallitus/puheenjohtaja.jpg",
-                                                  "name" => "Tuomas Poutanen",
-                                                  "position" => "Puheenjohtaja",
-                                                  "email" => "tuomas.poutanen@aalto.fi"]],
-
-
-
-                                                ]]); ?>
-
-
-
-
+<?php 
+    $rows = get_persons_table("hallitus");
+    $modrows = split_to_rows($rows, 4);
+    add_template("image-row.php", ["rows" => $modrows]);
+?>
 
 
 <?php get_footer(); ?>
