@@ -1,5 +1,5 @@
 <div class="container-fluid">
-  <div class="row row-no-padding">
+  <div class="row">
     <nav class="col-sm-3 col-md-2 hidden-xs-down sidebar">
 
       <?php
