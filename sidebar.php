@@ -25,7 +25,7 @@
   
                 foreach($subchildren as $subchild) { ?>
                 <li class="nav-item">
-                  <a class="nav-link h5" href="<?php echo "/". $child->post_name ."/". $subchild->post_name ?>" ><?php echo ucfirst($subchild->post_name) ?></a>
+                  <a class="nav-link h5" href="<?php echo "/inkubio/kiltalaisille/". $child->post_name ."/". $subchild->post_name ?>" ><?php echo ucfirst($subchild->post_name) ?></a>
                 </li>
                 <?php } ?>
 
