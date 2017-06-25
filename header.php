@@ -16,6 +16,7 @@
     <!-- Custom styles for this template -->
     <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/style.css">
     <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/assets/css/navbar.css">
+    <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/assets/css/sidebar.css">
     <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/assets/css/text.css">
 
 
