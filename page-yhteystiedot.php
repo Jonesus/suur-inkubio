@@ -1,7 +1,3 @@
-<!-- Necessary 'import' for all subpages -->
-<?php require('../../../../../wp-blog-header.php'); ?>
-
-
 <?php get_header(); ?>
 
 <?php 
