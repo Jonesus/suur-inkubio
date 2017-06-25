@@ -10,6 +10,10 @@
 $page = get_post();
 $content = apply_filters('the_content', $page->post_content); 
 echo $content;
+$children = get_children($page->ID);
+foreach($children as $child) {
+    echo $child->post_name . "\n";
+}
 ?>
 
 <?php add_template("image-title.php", ["bg-img" => "frontpage/kiva.jpg",

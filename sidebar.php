@@ -1,45 +1,37 @@
 <div class="container-fluid">
   <div class="row row-no-padding">
-    <nav class="col-sm-3 col-md-2 hidden-xs-down bg-faded sidebar">
-      <ul class="nav flex-column">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Overview</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Reports</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Analytics</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Export</a>
-        </li>
-      </ul>
+    <nav class="col-sm-3 col-md-2 hidden-xs-down sidebar">
 
-      <ul class="nav nav-pills flex-column">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Nav item</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Nav item again</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">One more nav</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Another nav item</a>
-        </li>
-      </ul>
+      <?php
+        $main = get_page_by_title("kiltalaisille");
+        $children = get_posts( array('post_type' => 'page',
+                                     'post_parent' => $main->ID,
+                                     'orderby' => 'menu_order',
+                                     'order' => 'ASC'
+                                    ));
+        $i = 0;
+        foreach($children as $child) { ?>
 
-      <ul class="nav nav-pills flex-column">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Nav item again</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">One more nav</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Another nav item</a>
-        </li>
-      </ul>
+          <div class="sidebar-toggle">
+            <a data-toggle="collapse" href="#collapse<?php echo $i ?>" class="h5"><i class="fa fa-angle-right rotate" aria-hidden="true"></i>&nbsp; <?php echo ucfirst($child->post_name) ?></a>
+            <div id="collapse<?php echo $i ?>" class="navbar-collapse collapse">
+              <ul class="nav flex-column">
+              <?php
+                $subchildren = get_posts( array('post_type' => 'page',
+                                                'post_parent' => $child->ID,
+                                                'orderby' => 'menu_order',
+                                                'order' => 'ASC'
+                                               ));
+  
+                foreach($subchildren as $subchild) { ?>
+                <li class="nav-item">
+                  <a class="nav-link h5" href="<?php echo "/". $child->post_name ."/". $subchild->post_name ?>" ><?php echo ucfirst($subchild->post_name) ?></a>
+                </li>
+                <?php } ?>
+
+              </ul>
+            </div>
+          </div>
+
+        <?php $i++; } ?>
     </nav>
