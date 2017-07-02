@@ -37,9 +37,9 @@
   <body>
   
   <!-- Navbar -->
-  <nav class="navbar navbar-inverse navbar-toggleable-sm fixed-top">
+  <nav class="navbar navbar-toggleable-sm fixed-top">
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
-      <span class="navbar-toggler-icon"></span>
+      <i class="fa fa-bars fa-2x" style="color: #fff;" aria-hidden="true"></i>
     </button>
     <a href="/inkubio/" class="navbar-brand d-flex mr-auto">
       <img alt="" height="20" src="<?php bloginfo('template_directory');?>/assets/images/inkulogo-valko.png">

@@ -37,9 +37,9 @@
   <body>
   
   <!-- Navbar -->
-  <nav class="navbar navbar-inverse navbar-toggleable-sm fixed-top">
+  <nav class="navbar navbar-toggleable-sm fixed-top">
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
-      <span class="navbar-toggler-icon"></span>
+      <i class="fa fa-bars fa-2x" style="color: #fff;" aria-hidden="true"></i>
     </button>
     <a href="/inkubio/" class="navbar-brand d-flex mr-auto">
       <img alt="" height="20" src="<?php bloginfo('template_directory');?>/assets/images/inkulogo-valko.png">
@@ -53,8 +53,8 @@
           <a class="nav-link" href="/yrityksille/">Yrityksille</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link hidden-sm-down" href="/kiltalaisille/">Kiltalaisille</a>
           <a data-toggle="collapse" href="#collapsedSidebar" class="nav-link hidden-md-up"><i class="fa fa-angle-right rotate" aria-hidden="true"></i>&nbsp; Kiltalaisille</a>
+          <a class="nav-link hidden-sm-down" href="/kiltalaisille/">Kiltalaisille</a>
           <div class="navbar-collapse collapse" id="collapsedSidebar">
           </div>
         </li>
@@ -83,8 +83,7 @@
         $i = 0;
         foreach($children as $child) { ?>
         <li class="nav-item">
-          <div class="sidebar-toggle">
-            <a data-toggle="collapse" href="#collapse<?php echo $i ?>" class="h5"><i class="fa fa-angle-right rotate" aria-hidden="true"></i>&nbsp; <?php echo ucfirst($child->post_name) ?></a>
+            <a data-toggle="collapse" class="nav-link" href="#collapse<?php echo $i ?>"><i class="fa fa-angle-right rotate" aria-hidden="true"></i>&nbsp; <?php echo ucfirst($child->post_name) ?></a>
             <div id="collapse<?php echo $i ?>" class="navbar-collapse collapse">
               <ul class="nav flex-column">
               <?php
@@ -96,13 +95,12 @@
   
                 foreach($subchildren as $subchild) { ?>
                 <li class="nav-item">
-                  <a class="nav-link h5" href="<?php echo "/". $child->post_name ."/". $subchild->post_name ?>" ><?php echo ucfirst($subchild->post_name) ?></a>
+                  <a class="nav-link" href="<?php echo "/kiltalaisille/". $child->post_name ."/". $subchild->post_name ."/"?>" ><?php echo ucfirst($subchild->post_name) ?></a>
                 </li>
                 <?php } ?>
 
               </ul>
             </div>
-          </div>
         </li>
 
       <?php $i++; } ?>
