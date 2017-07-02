@@ -47,16 +47,16 @@
     <div class="navbar-collapse collapse text-center" id="collapsingNavbar">
       <ul class="navbar-nav mx-auto w-100 justify-content-center">
         <li class="nav-item">
-          <a class="nav-link" href="/inkubio/abeille/">Abeille</a>
+          <a class="nav-link" href="/abeille/">Abeille</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/inkubio/yrityksille/">Yrityksille</a>
+          <a class="nav-link" href="/yrityksille/">Yrityksille</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/inkubio/kiltalaisille/">Kiltalaisille</a>
+          <a class="nav-link" href="/kiltalaisille/">Kiltalaisille</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/inkubio/yhteystiedot/">Yhteystiedot</a>
+          <a class="nav-link" href="/yhteystiedot/">Yhteystiedot</a>
         </li>
        </ul>
     </div>
