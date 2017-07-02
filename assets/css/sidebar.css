@@ -7,17 +7,12 @@
   top: 63px;
   bottom: 0;
   left: 0;
-  z-index: 1000;
-  padding: 20px;
+  z-index: 1005;
+  padding: 10px;
+  padding-top: 25px;
   overflow-x: hidden;
   overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
   background-color: #aaa;
-}
-
-/* Sidebar navigation */
-.sidebar {
-  padding-left: 20px;
-  padding-right: 0;
 }
 
 .sidebar-toggle {
@@ -32,10 +27,7 @@
 
 .sidebar .nav-item {
   width: 100%;
-}
-
-.sidebar .nav-item + .nav-item {
-  margin-left: 0;
+  padding-left: 10px;
 }
 
 .sidebar .nav-link {
@@ -46,7 +38,13 @@ a:link {
     text-decoration: none;
 }
 
+.navbar-nav li a {
+  color: #eee;
+}
 
+.sidebar .navbar-nav li a {
+  color: #333;
+}
 
 /* Sick animations */
 .rotate{
