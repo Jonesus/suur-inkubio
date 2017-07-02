@@ -1,11 +1,9 @@
-<?php get_header(); ?>
-
-<?php get_sidebar(); ?>
+<?php get_header("deep"); ?>
 
     <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/assets/css/page.css">
     <?php $page = get_post(); ?>
 
-    <div class="col-sm-9 offset-sm-3 col-md-10 offset-md-2">
+    <div class="col-sm-12 col-md-10 offset-md-2">
 
       <?php
         $page_img = get_post_meta( get_the_ID(), 'header_img_path', true);
