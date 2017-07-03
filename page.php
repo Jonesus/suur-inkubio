@@ -25,5 +25,5 @@
   </div> <!-- Sidebar row -->
 </div> <!-- Sidebar container -->
 
-<?php get_footer(); ?>
+<?php get_footer("deep"); ?>
 
