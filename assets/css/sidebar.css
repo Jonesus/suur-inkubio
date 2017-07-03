@@ -3,13 +3,10 @@
  */
 
 .sidebar {
-  position: fixed;
-  top: 63px;
-  bottom: 0;
-  left: 0;
+  height: 100vh;
   z-index: 1005;
   padding: 10px;
-  padding-top: 25px;
+  padding-top: 88px; /* Navbar height plus padding */
   overflow-x: hidden;
   overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
   background-color: #aaa;
