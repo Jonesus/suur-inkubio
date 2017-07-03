@@ -70,7 +70,7 @@
 
   <!-- Sidebar -->
   <div class="row">
-    <nav class="col-md-2 hidden-sm-down sidebar" id="sidebar">
+    <nav class="col-md-3 col-xl-2 hidden-sm-down sidebar" id="sidebar">
       <ul class="navbar-nav">
 
       <?php
