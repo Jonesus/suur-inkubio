@@ -5,23 +5,24 @@ $(document).ready(function(){
     $('a[href="' + location.pathname + '"]').closest('li').addClass('active');
 
     if (window.location.pathname.split("/").length == 5) {
-        $("a[href*='" + window.location.pathname + "']").parent().addClass("active");
-        $("a[href*='" + window.location.pathname + "']").parent().parent().closest("li").addClass("active");
-        $("a[href*='" + window.location.pathname + "']").parent().parent().closest("li").find("i").addClass("down");
-        $("a[href*='" + window.location.pathname + "']").parent().parent().closest("li").find("div").collapse("show");
-        console.log($("a[href*='" + window.location.pathname + "']").parent().parent().closest("li").parent().closest("li").find("i"));
+        var target = $("a[href*='" + window.location.pathname + "']").parent()
+        target.addClass("active");
+        target = target.parent().closest("li");
+        target.addClass("active");
+        target.find("i").addClass("down");
+        target.find("div").collapse("show");
         if (window.innerWidth < 768) {
-            console.log("moi");
-            $("a[href*='" + window.location.pathname + "']").parent().parent().closest("li").parent().closest("li").find("i").addClass("down");
-            $("a[href*='" + window.location.pathname + "']").parent().parent().closest("li").parent().closest("li").find("div").collapse("show");
+            target = target.parent().closest("li");
+            target.find("i").addClass("down");
+            target.find("div").collapse("show");
         }
-
     }
 
 
     // Rotate dropdown chevron
     $("li").click(function(e) {
         $(e.target).find("i").toggleClass("down");
+        $(e.target).parent().toggleClass("active");
     });
 
 
@@ -29,9 +30,12 @@ $(document).ready(function(){
     $('#collapsingNavbar').on('show.bs.collapse', function (e) {
         if ($(this).is(e.target)) {
             $('#collapsedSidebar').append($('#sidebar').html());
-            $("a[href*='" + window.location.pathname + "']").parent().parent().closest("li").parent().closest("li").find("div:first").addClass("show");
-            $("a[href*='" + window.location.pathname + "']").parent().parent().closest("li").parent().closest("li").addClass("active");
-            $("a[href*='" + window.location.pathname + "']").parent().parent().closest("li").parent().closest("li").find("i:first").addClass("down");
+
+            // Open current nav and add highlight
+            var activetarget = $("a[href*='" + window.location.pathname + "']").parent().parent().closest("li").parent().closest("li");
+            activetarget.find("div:first").addClass("show");
+            activetarget.addClass("active");
+            activetarget.find("i:first").addClass("down");
         }
     });
     $('#collapsingNavbar').on('hidden.bs.collapse', function (e) {
