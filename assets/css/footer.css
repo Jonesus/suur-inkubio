@@ -7,8 +7,17 @@
   color: #999;
   text-align: center;
   background-color: #006631;
+  position: absolute;
+  right: 0;
+  left: 0;
   bottom: 0;
 }
+
+.footer p {
+  margin: 0;
+  padding-top: 20px;
+}
+
 .footer p:last-child {
   margin-bottom: 0;
 }
