@@ -2,6 +2,22 @@
  * Text styles
  */
 
+@font-face {
+  font-family: inkubio;
+  src: url("../fonts/estyle.woff");
+}
+
+.estyle {
+  font-family: inkubio;
+  font-size: 37px;
+  color: #FFF;
+  text-decoration: none;
+  padding: 0;
+  padding-left: 20px;
+  margin-bottom:-15px;
+
+}
+
 h1 {
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;

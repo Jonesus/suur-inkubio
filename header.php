@@ -43,6 +43,7 @@
     </button>
     <a href="/" class="navbar-brand d-flex mr-auto">
       <img alt="" height="20" src="<?php bloginfo('template_directory');?>/assets/images/inkulogo-valko.png">
+      <span class="estyle" style="margin-right: -146px;">Inkubio</span>
     </a>
     <div class="navbar-collapse collapse text-center" id="collapsingNavbar">
       <ul class="navbar-nav mx-auto w-100 justify-content-center">
