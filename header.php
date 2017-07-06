@@ -35,9 +35,9 @@
   </head>
 
   <body>
-  
+
   <!-- Navbar -->
-  <nav class="navbar navbar-toggleable-sm fixed-top">
+  <nav class="navbar navbar-toggleable-sm fixed-top" <?php echo (is_admin_bar_showing()) ? ' style="top: 32px;"' : ''; ?>>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
       <i class="fa fa-bars fa-2x" style="color: #fff;" aria-hidden="true"></i>
     </button>
