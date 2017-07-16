@@ -9,7 +9,7 @@ function add_template($filename, $arguments) {
 
     # Assign args to a new variable for passing namespace to include
     $args = $arguments;
-    include( locate_template('/template-parts/' . $filename, false, false)); 
+    include( locate_template('/template-parts/' . $filename, false, false));
 }
 
 
@@ -47,5 +47,10 @@ function split_to_rows($arr, $columncount) {
     return $ret;
 }
 
+
+function fix_admin_toolbar() {
+    echo '<style type="text/css"> @media screen and (max-width: 600px){ #wpadminbar {position: fixed;}} </style>';
+}
+add_action( 'wp_head', 'fix_admin_toolbar' );
 
 ?>
