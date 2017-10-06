@@ -7,6 +7,11 @@
   src: url("../fonts/estyle.woff");
 }
 
+@font-face {
+  font-family: coves;
+  src: url("../fonts/coves.woff");
+}
+
 .estyle {
   font-family: inkubio;
   font-size: 37px;
