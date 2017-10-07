@@ -9,10 +9,6 @@
   color: rgb(255, 255, 255);
   text-align: center;
   background-color: rgb(31, 56, 63);
-  position: absolute;
-  right: 0;
-  left: 0;
-  bottom: 0;
 }
 
 .footer .row {

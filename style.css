@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  padding-top: 63px; /* Navbar height */
+  padding-top: 60px; /* Navbar height */
   position: relative;
   min-height: 100%;
 }
@@ -24,10 +24,16 @@ body {
  */
 
 .page-section {
-  padding: 10vh;
-  padding-bottom: 188px; /* Footer height */
+  padding-top: 10vh;
+  padding-bottom: 10vh;
   background-color: #ddd;
-  background-image: none;
+  background-image: url("assets/images/frontpage/pattern-background.jpg");
+}
+
+.upper {
+  box-shadow: 0px 0px 40px -6px #000;
+  position: relative;
+  z-index: 10;
 }
 
 .padded-row {
@@ -37,6 +43,29 @@ body {
 .row-no-padding > [class*="col-"] {
     padding-left: 0 !important;
     padding-right: 0 !important;
+}
+
+.twist {
+  width: 100%;
+  margin-top: 7vw;
+  margin-bottom: 7vw;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+  background: rgb(255, 255, 255);
+  -ms-transform: skewy(-7deg); /* IE 9 */
+  -webkit-transform: skewY(-7deg); /* Chrome, Safari, Opera */
+  transform: skewY(-7deg);
+}
+
+.twist-content {
+  margin: 0;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-top: 5vw;
+  width: 100%;
+  -ms-transform: skewY(7deg); /* IE 9 */
+  -webkit-transform: skewY(7deg); /* Chrome, Safari, Opera */
+  transform: skewY(7deg);
 }
 
 

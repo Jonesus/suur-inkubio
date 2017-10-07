@@ -1,6 +1,6 @@
 
   <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/assets/css/footer.css">
-  <footer class="footer">
+  <footer class="footer upper">
     <div class="row no-gutters justify-content-center">
       <div class="col-sm-6 col-md-3 d-flex align-items-center h100">
         <img src="<?php bloginfo('template_directory');?>/assets/images/logos/futurice.png">

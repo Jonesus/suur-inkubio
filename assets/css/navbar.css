@@ -3,33 +3,34 @@
  */
 
 .navbar {
-  background-color: rgb(0,133,66);
+  background-color: rgb(255, 255, 255);
   box-shadow: 0px -15px 20px 10px #000;
 }
 
 .navbar-brand {
   padding: 0px;
+  margin-left: 2vw;
 }
 .navbar-brand>img {
-  height: 50px;
-  padding-top: 13px;
-  padding-bottom: 5px;
-  width: 50px;
+  height: 45px;
 }
 
 /* Nav links */
 .nav-item {
   font-weight: 500;
-  font-size: 18px;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin-top: 5px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 36px;
+  margin-top: -5px;
+  margin-bottom: -5px;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  font-family: coves;
 }
 
 
 .nav-link {
-  color: #fff;
+  color: rgb(11, 163, 96) !important;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 

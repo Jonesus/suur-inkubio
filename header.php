@@ -39,11 +39,10 @@
   <!-- Navbar -->
   <nav class="navbar navbar-toggleable-sm fixed-top" <?php echo (is_admin_bar_showing()) ? ' style="top: 32px;"' : ''; ?>>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
-      <i class="fa fa-bars fa-2x" style="color: #fff;" aria-hidden="true"></i>
+      <i class="fa fa-bars fa-2x" style="color: rbg(11, 163, 96);" aria-hidden="true"></i>
     </button>
     <a href="/" class="navbar-brand d-flex mr-auto">
-      <img alt="" height="20" src="<?php bloginfo('template_directory');?>/assets/images/inkulogo-valko.png">
-      <span class="estyle" style="margin-right: -146px;">Inkubio</span>
+      <img alt="" src="<?php bloginfo('template_directory');?>/assets/images/inkulogo-viher.svg">
     </a>
     <div class="navbar-collapse collapse text-center" id="collapsingNavbar">
       <ul class="navbar-nav mx-auto w-100 justify-content-center">
