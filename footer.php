@@ -1,18 +1,18 @@
 
   <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/assets/css/footer.css">
   <footer class="footer upper">
-    <div class="row no-gutters justify-content-center">
-      <div class="col-sm-6 col-md-3 d-flex align-items-center h100">
-        <img src="<?php bloginfo('template_directory');?>/assets/images/logos/futurice.png">
+    <div class="row justify-content-center">
+      <div class="col-sm-6 col-md-3 align-items-center">
+        <img class="img-fluid" src="<?php bloginfo('template_directory');?>/assets/images/logos/futurice.png">
       </div>
-      <div class="col-sm-6 col-md-3 d-flex align-items-center h100">
-        <img src="<?php bloginfo('template_directory');?>/assets/images/logos/mectalent.png">
+      <div class="col-sm-6 col-md-3 align-items-center">
+        <img class="img-fluid" src="<?php bloginfo('template_directory');?>/assets/images/logos/mectalent.png">
       </div>
-      <div class="col-sm-6 col-md-3 d-flex align-items-center h100">
-        <img src="<?php bloginfo('template_directory');?>/assets/images/logos/roche.png">
+      <div class="col-sm-6 col-md-3 align-items-center">
+        <img class="img-fluid" src="<?php bloginfo('template_directory');?>/assets/images/logos/roche.png">
       </div>
-      <div class="col-sm-6 col-md-3 d-flex align-items-center h100">
-        <img src="<?php bloginfo('template_directory');?>/assets/images/logos/thermo.png">
+      <div class="col-sm-6 col-md-3 align-items-center">
+        <img class="img-fluid" src="<?php bloginfo('template_directory');?>/assets/images/logos/thermo.png">
       </div>
     </div>
     <div class="d-flex justify-content-between" style="padding-top: 30px;">
