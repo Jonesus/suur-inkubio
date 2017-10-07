@@ -3,6 +3,7 @@
  */
 
 .footer {
+  z-index: 9999;
   padding: 40px 0;
   font-family: coves;
   font-size: 18px;

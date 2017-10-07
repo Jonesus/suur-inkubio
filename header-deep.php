@@ -39,11 +39,10 @@
   <!-- Navbar -->
   <nav class="navbar navbar-toggleable-sm fixed-top"  <?php echo (is_admin_bar_showing()) ? ' style="top: 32px;"' : ''; ?>>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
-      <i class="fa fa-bars fa-2x" style="color: #fff;" aria-hidden="true"></i>
+      <i class="fa fa-bars fa-2x" style="color: rgb(11, 163, 96);;" aria-hidden="true"></i>
     </button>
     <a href="/" class="navbar-brand d-flex mr-auto">
-      <img alt="" height="20" src="<?php bloginfo('template_directory');?>/assets/images/inkulogo-valko.png">
-      <span class="estyle" style="margin-right: -146px;">Inkubio</span>
+      <img alt="" height="20" src="<?php bloginfo('template_directory');?>/assets/images/inkulogo-viher.svg">
     </a>
     <div class="navbar-collapse collapse text-center" id="collapsingNavbar">
       <ul class="navbar-nav mx-auto w-100 justify-content-center">
@@ -72,6 +71,9 @@
   <!-- Sidebar -->
   <div class="row">
     <nav class="col-md-3 col-xl-2 hidden-sm-down sidebar fixed-top" id="sidebar"  <?php echo (is_admin_bar_showing()) ? ' style="top: 32px;"' : ''; ?>>
+      <div class="logotext">
+        <span class="estyle" style="margin-left: -9px;">Inkubio</span>
+      </div>
       <ul class="navbar-nav">
 
       <?php
@@ -84,7 +86,7 @@
         $i = 0;
         foreach($children as $child) { ?>
         <li class="nav-item">
-            <a data-toggle="collapse" class="nav-link" href="#collapse<?php echo $i ?>"><i class="fa fa-angle-right rotate" aria-hidden="true"></i>&nbsp; <?php echo ucfirst($child->post_name) ?></a>
+            <a data-toggle="collapse" class="nav-link" href="#collapse<?php echo $i ?>"><?php echo ucfirst($child->post_name) ?></a>
             <div id="collapse<?php echo $i ?>" class="navbar-collapse collapse">
               <ul class="nav flex-column">
               <?php

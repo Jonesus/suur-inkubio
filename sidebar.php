@@ -13,9 +13,10 @@
         foreach($children as $child) { ?>
 
           <div class="sidebar-toggle">
-            <a data-toggle="collapse" href="#collapse<?php echo $i ?>" class="h5"><i class="fa fa-angle-right rotate" aria-hidden="true"></i>&nbsp; <?php echo ucfirst($child->post_name) ?></a>
+            <a data-toggle="collapse" href="#collapse<?php echo $i ?>"><?php echo ucfirst($child->post_name) ?></a>
             <div id="collapse<?php echo $i ?>" class="navbar-collapse collapse">
               <ul class="nav flex-column">
+
               <?php
                 $subchildren = get_posts( array('post_type' => 'page',
                                                 'post_parent' => $child->ID,
@@ -25,7 +26,7 @@
   
                 foreach($subchildren as $subchild) { ?>
                 <li class="nav-item">
-                  <a class="nav-link h5" href="<?php echo "/". $child->post_name ."/". $subchild->post_name ?>" ><?php echo ucfirst($subchild->post_name) ?></a>
+                  <a class="nav-link" href="<?php echo "/". $child->post_name ."/". $subchild->post_name ?>" ><?php echo ucfirst($subchild->post_name) ?></a>
                 </li>
                 <?php } ?>
 
