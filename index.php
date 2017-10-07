@@ -5,7 +5,7 @@
   <div class="row padded-row">
     <div class="col-lg-12 title-text text-center">
       <h1>Suur-Inkubio</h1>
-      <h2>BIOINFORMAATIOTEKNOLOGIAN KILTA</h2>
+      <h2>BIOINFORMAATIO&shy;TEKNOLOGIAN KILTA</h2>
     </div>
   </div>
 </div>
