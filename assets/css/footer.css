@@ -16,7 +16,7 @@
 }
 
 .footer .row {
-  width: 98vw;
+  width: 100%;
   padding-left: 3vw;
   padding-right: 3vw;
 }
@@ -28,5 +28,5 @@
 
 .footer img {
   width: 100%;
-  padding: 5px;
+  padding: 20px;
 }
