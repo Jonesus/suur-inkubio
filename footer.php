@@ -1,11 +1,19 @@
 
   <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/assets/css/footer.css">
   <footer class="footer">
-    <div class="d-flex align-items-center h100 justify-content-center">
-      <img src="<?php bloginfo('template_directory');?>/assets/images/logos/futurice.png">
-      <img src="<?php bloginfo('template_directory');?>/assets/images/logos/mectalent.png">
-      <img src="<?php bloginfo('template_directory');?>/assets/images/logos/roche.png">
-      <img src="<?php bloginfo('template_directory');?>/assets/images/logos/thermo.png">
+    <div class="row no-gutters justify-content-center">
+      <div class="col-sm-6 col-md-3 d-flex align-items-center h100">
+        <img src="<?php bloginfo('template_directory');?>/assets/images/logos/futurice.png">
+      </div>
+      <div class="col-sm-6 col-md-3 d-flex align-items-center h100">
+        <img src="<?php bloginfo('template_directory');?>/assets/images/logos/mectalent.png">
+      </div>
+      <div class="col-sm-6 col-md-3 d-flex align-items-center h100">
+        <img src="<?php bloginfo('template_directory');?>/assets/images/logos/roche.png">
+      </div>
+      <div class="col-sm-6 col-md-3 d-flex align-items-center h100">
+        <img src="<?php bloginfo('template_directory');?>/assets/images/logos/thermo.png">
+      </div>
     </div>
     <div class="d-flex justify-content-between" style="padding-top: 30px;">
       <div style="padding-left: 6vw;">
