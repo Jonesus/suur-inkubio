@@ -78,6 +78,7 @@ button:focus {
 
 .hamburger {
   padding: 15px 15px;
+  padding-bottom: 5px;
   padding-top: 10px;
   display: inline-block;
   cursor: pointer;
