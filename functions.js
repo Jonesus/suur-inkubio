@@ -18,6 +18,11 @@ $(document).ready(function(){
         }
     }
 
+    // Hamburger animation
+    var hamburger = document.querySelector(".hamburger");
+    hamburger.addEventListener("click", function() {
+        hamburger.classList.toggle("is-active");
+    });
 
     // Rotate dropdown chevron
     $("li").click(function(e) {
@@ -30,6 +35,7 @@ $(document).ready(function(){
     $('#collapsingNavbar').on('show.bs.collapse', function (e) {
         if ($(this).is(e.target)) {
             $('#collapsedSidebar').append($('#sidebar').html());
+            $('#collapsedSidebar .logotext').remove();
 
             // Open current nav and add highlight
             var activetarget = $("a[href*='" + window.location.pathname + "']").parent().parent().closest("li").parent().closest("li");

@@ -38,8 +38,10 @@
   
   <!-- Navbar -->
   <nav class="navbar navbar-toggleable-sm fixed-top"  <?php echo (is_admin_bar_showing()) ? ' style="top: 32px;"' : ''; ?>>
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
-      <i class="fa fa-bars fa-2x" style="color: rgb(11, 163, 96);;" aria-hidden="true"></i>
+    <button class="navbar-toggler navbar-toggler-right hamburger hamburger--spin" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
     </button>
     <a href="/" class="navbar-brand d-flex mr-auto">
       <img alt="" height="20" src="<?php bloginfo('template_directory');?>/assets/images/inkulogo-viher.svg">
@@ -53,7 +55,7 @@
           <a class="nav-link" href="/yrityksille/">Yrityksille</a>
         </li>
         <li class="nav-item">
-          <a data-toggle="collapse" href="#collapsedSidebar" class="nav-link hidden-md-up"><i class="fa fa-angle-right rotate" aria-hidden="true"></i>&nbsp; Kiltalaisille</a>
+          <a data-toggle="collapse" href="#collapsedSidebar" class="nav-link hidden-md-up">Kiltalaisille</a>
           <a class="nav-link hidden-sm-down" href="/kiltalaisille/">Kiltalaisille</a>
           <div class="navbar-collapse collapse" id="collapsedSidebar">
           </div>
@@ -74,7 +76,7 @@
       <div class="logotext">
         <span class="estyle" style="margin-left: -9px;">Inkubio</span>
       </div>
-      <ul class="navbar-nav">
+      <ul class="nav navbar-nav" id="accordion">
 
       <?php
         $main = get_page_by_title("kiltalaisille");
@@ -84,26 +86,27 @@
                                      'order' => 'ASC'
                                     ));
         $i = 0;
-        foreach($children as $child) { ?>
-        <li class="nav-item">
-            <a data-toggle="collapse" class="nav-link" href="#collapse<?php echo $i ?>"><?php echo ucfirst($child->post_name) ?></a>
-            <div id="collapse<?php echo $i ?>" class="navbar-collapse collapse">
-              <ul class="nav flex-column">
-              <?php
-                $subchildren = get_posts( array('post_type' => 'page',
-                                                'post_parent' => $child->ID,
-                                                'orderby' => 'menu_order',
-                                                'order' => 'ASC'
-                                               ));
-  
-                foreach($subchildren as $subchild) { ?>
-                <li class="nav-item">
-                  <a class="nav-link" href="<?php echo "/kiltalaisille/". $child->post_name ."/". $subchild->post_name ."/"?>" ><?php echo ucfirst($subchild->post_name) ?></a>
-                </li>
-                <?php } ?>
 
-              </ul>
-            </div>
+        foreach($children as $child) { ?>
+        <li class="nav-item panel">
+          <a data-toggle="collapse" data-parent="#accordion" class="nav-link" href="#collapse<?php echo $i ?>"><?php echo ucfirst($child->post_name) ?></a>
+          <div id="collapse<?php echo $i ?>" class="collapse">
+            <ul class="nav flex-column">
+            <?php
+              $subchildren = get_posts( array('post_type' => 'page',
+                                              'post_parent' => $child->ID,
+                                              'orderby' => 'menu_order',
+                                              'order' => 'ASC'
+                                              ));
+
+              foreach($subchildren as $subchild) { ?>
+              <li class="nav-item">
+                <a class="nav-link" href="<?php echo "/kiltalaisille/". $child->post_name ."/". $subchild->post_name ."/"?>" ><?php echo ucfirst($subchild->post_name) ?></a>
+              </li>
+              <?php } ?>
+
+            </ul>
+          </div>
         </li>
 
       <?php $i++; } ?>
