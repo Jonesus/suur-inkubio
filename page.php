@@ -3,7 +3,7 @@
     <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/assets/css/page.css">
     <?php $page = get_post(); ?>
 
-    <div class="col-sm-12 col-md-9 offset-md-3 col-xl-10 offset-xl-2 background">
+    <div class="col-sm-12 col-md-9 offset-md-3 col-xl-10 ml-auto background">
       <div class="row justify-content-center">
         <div class="col-sm-12 col-md-12 col-lg-9 col-xl-7 content-page">
 

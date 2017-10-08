@@ -9,12 +9,11 @@ $(document).ready(function(){
         target.addClass("active");
         target = target.parent().closest("li");
         target.addClass("active");
-        target.find("i").addClass("down");
-        target.find("div").collapse("show");
+        target.find("div").addClass("show");
+        
         if (window.innerWidth < 768) {
             target = target.parent().closest("li");
-            target.find("i").addClass("down");
-            target.find("div").collapse("show");
+            target.find("div").addClass("show");
         }
     }
 
@@ -24,11 +23,16 @@ $(document).ready(function(){
         hamburger.classList.toggle("is-active");
     });
 
-    // Rotate dropdown chevron
-    $("li").click(function(e) {
-        $(e.target).find("i").toggleClass("down");
-        $(e.target).parent().toggleClass("active");
+
+    // Sidebar active toggle
+    $(".nav li").on("show.bs.collapse", function() {
+        $(this).addClass("active");
     });
+
+    $(".nav li").on("hide.bs.collapse", function() {
+        $(this).removeClass("active");
+    });
+  
 
 
     // Collapse sidebar into navbar
