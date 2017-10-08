@@ -41,10 +41,10 @@
         Inkubio ry 2017
       </div>
       <div style="padding-right: 6vw;">
-        <a href="">Facebook</a>
-        <a href="">Twitter</a>
-        <a href="">Instagram</a>
-        <a href="">LinkedIn</a>
+        <a href="https://www.facebook.com/inkubio/">Facebook</a>
+        <a href="https://twitter.com/inkubio">Twitter</a>
+        <a href="https://www.instagram.com/inkubio/">Instagram</a>
+        <a href="https://www.linkedin.com/groups/8533430/profile">LinkedIn</a>
       </div>
     </div>
 
