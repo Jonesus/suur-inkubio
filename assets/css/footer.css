@@ -3,21 +3,27 @@
  */
 
 .footer {
+  z-index: 9998;
   padding: 40px 0;
-  color: #999;
+  font-family: coves;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
   text-align: center;
-  background-color: #006631;
-  position: absolute;
-  right: 0;
-  left: 0;
-  bottom: 0;
+  background-color: rgb(31, 56, 63);
 }
 
-.footer p {
-  margin: 0;
-  padding-top: 20px;
+.footer .row {
+  padding-left: 30px;
+  width: 100%;
 }
 
-.footer p:last-child {
-  margin-bottom: 0;
+.footer a {
+  color: rgb(255, 255, 255);
+  margin-left: 20px;
+}
+
+.footer img {
+  min-width: 100%;
+  min-height: 100%;
+  padding: 20px;
 }

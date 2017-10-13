@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  padding-top: 63px; /* Navbar height */
+  padding-top: 60px; /* Navbar height */
   position: relative;
   min-height: 100%;
 }
@@ -24,10 +24,16 @@ body {
  */
 
 .page-section {
-  padding: 10vh;
-  padding-bottom: 188px; /* Footer height */
+  padding-top: 10vh;
+  padding-bottom: 10vh;
   background-color: #ddd;
-  background-image: none;
+  background-image: url("assets/images/frontpage/pattern-background.jpg");
+}
+
+.upper {
+  box-shadow: 0px 0px 40px -6px #000;
+  position: relative;
+  z-index: 10;
 }
 
 .padded-row {
@@ -39,7 +45,53 @@ body {
     padding-right: 0 !important;
 }
 
+.twist {
+  width: 100%;
+  margin-top: 7vw;
+  margin-bottom: 7vw;
+  padding-top: 10vw;
+  padding-bottom: 10vw;
+  background: rgb(255, 255, 255);
+  -ms-transform: skewy(-7deg); /* IE 9 */
+  -webkit-transform: skewY(-7deg); /* Chrome, Safari, Opera */
+  transform: skewY(-7deg);
+}
 
+.twist-content {
+  margin: 0;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  width: 100%;
+  -ms-transform: skewY(7deg); /* IE 9 */
+  -webkit-transform: skewY(7deg); /* Chrome, Safari, Opera */
+  transform: skewY(7deg);
+}
+
+.pill-button {
+  border: 2px solid;
+  border-radius: 50px;
+  border-color: rgb(11, 163, 96);
+  padding: 5px 50px;
+  font-family: coves;
+  font-size: 2em;
+  color: rgb(11, 163, 96);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.pill-button:hover {
+  border-color: rgb(68, 209, 146);
+  color: rgb(68, 209, 146);
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.title {
+  font-family: coves;
+  font-size: 4em;
+  border-bottom: 2px solid #555;
+  margin-bottom: 20px;
+}
 
 /*
  * Image styles
@@ -54,7 +106,16 @@ body {
   background-size: cover;
 }
 
-.img-fluid {
-  max-height: 300px;
+.card {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 60vw;
+}
+
+.row-fix {
+  padding-left: 30px;
+  width: 100%;
 }
 

@@ -1,14 +1,43 @@
 <?php get_header(); ?>
 
-<?php add_template("image-title.php", ["bg-img" => "frontpage/etu.jpg",
-                                       "h1" => "Suur-Inkubio",
-                                       "p" => "Gotta get dat 75 fuksia",]); ?>
+<!-- Begin section -->
+<div class="page-section bg-image upper" style="background-image: url(<?php bloginfo('template_directory');?>/assets/images/frontpage/circuit_background.svg);">
+  <div class="row padded-row">
+    <div class="col-lg-12 title-text text-center">
+      <h1>Suur-Inkubio</h1>
+      <h2>BIOINFORMAATIO&shy;TEKNOLOGIAN KILTA</h2>
+    </div>
+  </div>
+</div>
+<!-- End section -->
 
-<?php add_template("text-image.php", ["rows" => [ ["teksti1", "frontpage/genes.jpg"],
-                                                  ["teksti2", "frontpage/poutsi.jpg"],
-                                                  ["teksti3", "frontpage/genes.jpg"],
-                                                ]]); ?>
+<!-- Begin section -->
+<div class="page-section">
+  <div class="twist upper">
 
+    <div class="row twist-content justify-content-center">
+      <div class="title">
+        Sample text
+      </div>
+    </div>
+    
+    <div class="row twist-content justify-content-center">
+      <div class="col-sm-12 col-md-6 col-xl-4" style="text-align:center;">
+        <p class="paragraph-text">
+          It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+        </p>
+        <a href="" class="pill-button">Dank</a>
+      </div>
+      <div class="col-sm-12 col-md-6 col-xl-4" style="text-align:center;">
+        <p class="paragraph-text">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+        <a href="" class="pill-button">Meme</a>
+      </div>
+    </div>
 
+  </div>
+</div>
+<!-- End section -->
 
 <?php get_footer(); ?>

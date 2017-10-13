@@ -7,6 +7,11 @@
   src: url("../fonts/estyle.woff");
 }
 
+@font-face {
+  font-family: coves;
+  src: url("../fonts/coves.woff");
+}
+
 .estyle {
   font-family: inkubio;
   font-size: 37px;
@@ -20,11 +25,20 @@
 
 h1 {
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 5em;
+  font-family: inkubio;
+  font-size: 8em;
   font-weight: normal;
-  color: #FFFFFF;
-  text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+  color:rgb(255, 255, 255);
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  margin: 0;
+  font-family: coves;
+  font-size: 2em;
+  letter-spacing: 5px;
+  color:rgb(255, 255, 255);
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
 }
 
 h3 {
@@ -47,12 +61,12 @@ h5 {
 
 .title-text {
     position: relative;
-    margin-top: 40vh;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
 }
 
 .paragraph-text {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 30px;
   font-size: 20px;
   color: #555;
 }
@@ -61,4 +75,5 @@ h5 {
   font-size: 30px;
   color: #bbb;
 }
+
 

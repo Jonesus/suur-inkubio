@@ -11,7 +11,7 @@
     <title>Suur-Inkubio</title>
 
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
 
     <!-- Custom styles for this template -->
     <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/style.css">
@@ -21,7 +21,7 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
     <script src="https://use.fontawesome.com/9899037e8f.js"></script>
     <script type="text/javascript" src="<?php bloginfo('template_directory');?>/functions.js"></script>
 
@@ -37,14 +37,15 @@
   <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-toggleable-sm fixed-top" <?php echo (is_admin_bar_showing()) ? ' style="top: 32px;"' : ''; ?>>
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
-      <i class="fa fa-bars fa-2x" style="color: #fff;" aria-hidden="true"></i>
-    </button>
-    <a href="/" class="navbar-brand d-flex mr-auto">
-      <img alt="" height="20" src="<?php bloginfo('template_directory');?>/assets/images/inkulogo-valko.png">
-      <span class="estyle" style="margin-right: -146px;">Inkubio</span>
+  <nav class="navbar navbar-expand-md fixed-top"  <?php echo (is_admin_bar_showing()) ? ' style="top: 32px;"' : ''; ?>>
+    <a href="/" class="navbar-brand">
+      <img alt="" src="<?php bloginfo('template_directory');?>/assets/images/inkulogo-viher.svg">
     </a>
+    <button class="navbar-toggler hamburger hamburger--spin" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
     <div class="navbar-collapse collapse text-center" id="collapsingNavbar">
       <ul class="navbar-nav mx-auto w-100 justify-content-center">
         <li class="nav-item">
