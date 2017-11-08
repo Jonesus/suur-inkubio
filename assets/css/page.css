@@ -29,12 +29,16 @@ p {
   height: 100%;
 }
 
+
+/*
+ * Signup and registration styles
+ */
 .recaptcha-container {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
-form {
+form, .account-container {
   margin: 1rem;
   margin-top: 2rem;
 }

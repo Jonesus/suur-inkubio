@@ -115,7 +115,10 @@
       <ul class="nav navbar-nav" style="margin-top: 5vh;">
       <?php if ( is_user_logged_in() ) : ?>
         <li class="nav-item">
-          <a class="nav-link" href="<?php echo home_url( "account" ) ?>">Oma sivu</a>
+          <a class="nav-link" href="<?php echo home_url( "account" ) ?>">
+            <?php $u = get_userdata( get_current_user_id()) ;
+                  echo $u->get("username") ? $u->get("username") : $u->get("nickname"); ?>
+          </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="<?php echo wp_logout_url() ?>">Kirjaudu ulos</a>
