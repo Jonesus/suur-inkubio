@@ -34,12 +34,7 @@ p {
   margin-bottom: 2rem;
 }
 
-.login-form-container {
-  margin: 0.5rem;
-  margin-top: 2rem;
-}
-
-#register-form {
+form {
   margin: 1rem;
   margin-top: 2rem;
 }
