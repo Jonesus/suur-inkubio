@@ -111,7 +111,8 @@
 
       <?php $i++; } ?>
       </ul>
-      <ul class="nav navbar-nav">
+
+      <ul class="nav navbar-nav" style="margin-top: 5vh;">
       <?php if ( is_user_logged_in() ) : ?>
         <li class="nav-item">
           <a class="nav-link" href="<?php echo home_url( "member-account" ) ?>">Oma sivu</a>
