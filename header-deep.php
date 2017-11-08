@@ -115,17 +115,17 @@
       <ul class="nav navbar-nav" style="margin-top: 5vh;">
       <?php if ( is_user_logged_in() ) : ?>
         <li class="nav-item">
-          <a class="nav-link" href="<?php echo home_url( "member-account" ) ?>">Oma sivu</a>
+          <a class="nav-link" href="<?php echo home_url( "account" ) ?>">Oma sivu</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="<?php echo wp_logout_url() ?>">Kirjaudu ulos</a>
         </li>
       <?php else : ?>
         <li class="nav-item">
-          <a class="nav-link" href="<?php echo home_url( "member-login" ) ?>">Kirjaudu</a>
+          <a class="nav-link" href="<?php echo home_url( "login" ) ?>">Kirjaudu</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<?php echo home_url( "member-register" ) ?>">Rekisteröidy</a>
+          <a class="nav-link" href="<?php echo home_url( "register" ) ?>">Rekisteröidy</a>
         </li>
       <?php endif; ?>
       </ul>
