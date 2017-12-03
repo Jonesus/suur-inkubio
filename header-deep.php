@@ -49,21 +49,26 @@
     <div class="navbar-collapse collapse text-center" id="collapsingNavbar">
       <ul class="navbar-nav mx-auto w-100 justify-content-center">
         <li class="nav-item">
-          <a class="nav-link" href="/abeille/">Abeille</a>
+          <a class="nav-link" href=<?php echo "/" . slugify_string(__('Abeille', 'suurinkubio')); ?>><?php _e('Abeille', 'suurinkubio') ?></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/yrityksille/">Yrityksille</a>
+          <a class="nav-link" href=<?php echo "/" . slugify_string(__('Yrityksille', 'suurinkubio')); ?>><?php _e('Yrityksille', 'suurinkubio') ?></a>
         </li>
         <li class="nav-item">
-          <a data-toggle="collapse" href="#collapsedSidebar" class="nav-link d-none d-md-block">Kiltalaisille</a>
-          <a class="nav-link d-sm-block d-md-none" href="/kiltalaisille/">Kiltalaisille</a>
+          <a data-toggle="collapse" href="#collapsedSidebar" class="nav-link d-md-none d-lg-none d-xl-none"><?php _e('Kiltalaisille', 'suurinkubio') ?></a>
+          <a class="nav-link d-none d-md-block" href=<?php echo "/" . slugify_string(__('Kiltalaisille', 'suurinkubio')); ?>><?php _e('Kiltalaisille', 'suurinkubio') ?></a>
           <div class="navbar-collapse collapse" id="collapsedSidebar">
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/yhteystiedot/">Yhteystiedot</a>
+          <a class="nav-link" href=<?php echo "/" . slugify_string(__('Ota yhteyttä', 'suurinkubio')); ?>><?php _e('Ota yhteyttä', 'suurinkubio') ?></a>
         </li>
        </ul>
+
+       <?php $langs = get_language_links(); ?>
+       <a class="nav-lang" href="<?php echo $langs["fi"]; ?>">FI</a>
+       <span class="nav-lang">/</span>
+       <a class="nav-lang" href="<?php echo $langs["en"]; ?>">EN</a>
     </div>
   </nav>
   <!-- End navbar -->
@@ -79,7 +84,14 @@
       <ul class="nav navbar-nav" id="accordion">
 
       <?php
-        $main = get_page_by_title("kiltalaisille");
+        $lang = get_page_language();
+        if ( $lang == 'fi' ) {
+          $lang_url = "";
+        } else {
+          $lang_url = "en/";
+        }
+        $prefix = __('Kiltalaisille', 'suurinkubio');
+        $main = get_page_by_title( $prefix );
         $children = get_posts( array('post_type' => 'page',
                                      'post_parent' => $main->ID,
                                      'orderby' => 'menu_order',
@@ -101,7 +113,7 @@
 
               foreach($subchildren as $subchild) { ?>
               <li class="nav-item">
-                <a class="nav-link" href="<?php echo "/kiltalaisille/". $child->post_name ."/". $subchild->post_name ."/"?>" ><?php echo ucfirst($subchild->post_name) ?></a>
+                <a class="nav-link" href="<?php echo "/". $lang_url . strtolower(__('Kiltalaisille', 'suurinkubio')) ."/". $child->post_name ."/". $subchild->post_name ."/"?>" ><?php echo ucfirst($subchild->post_name) ?></a>
               </li>
               <?php } ?>
 
@@ -110,5 +122,24 @@
         </li>
 
       <?php $i++; } ?>
+      <hr>
+      <?php if ( is_user_logged_in() ) : ?>
+        <li class="nav-item">
+          <a class="nav-link" href="<?php echo home_url( "account" ) ?>">
+            <?php $u = get_userdata( get_current_user_id()) ;
+                  echo $u->get("username") ? $u->get("username") : $u->get("nickname"); ?>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="<?php echo wp_logout_url() ?>"><?php _e('Kirjaudu ulos', 'suurinkubio') ?></a>
+        </li>
+      <?php else : ?>
+        <li class="nav-item">
+          <a class="nav-link" href="<?php echo home_url( "login" ) ?>"><?php _e('Kirjaudu', 'suurinkubio') ?></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="<?php echo home_url( "register" ) ?>"><?php _e('Rekisteröidy', 'suurinkubio') ?></a>
+        </li>
+      <?php endif; ?>
       </ul>
     </nav>

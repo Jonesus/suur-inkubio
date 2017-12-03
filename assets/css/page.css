@@ -29,4 +29,46 @@ p {
   height: 100%;
 }
 
+.rotate180 {
+  -ms-transform: rotate(180deg); /* IE 9 */
+  -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+  transform: rotate(180deg);
+}
 
+img.center {
+  display: block;
+  margin: 0 auto;
+}
+
+
+/*
+ * Signup and registration styles
+ */
+.recaptcha-container {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+form, .account-container {
+  margin: 1rem;
+  margin-top: 2rem;
+}
+
+.form-row {
+  display: block;
+  margin-top: 1rem;
+}
+
+.form-row label {
+  display: block;
+  margin-bottom: 0;
+}
+
+.form-row .radio {
+  margin-right: 1rem;
+  display: inline-block;
+}
+
+.form-row input {
+  margin-right: 0.5rem;
+}

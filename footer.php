@@ -2,7 +2,7 @@
   <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/assets/css/footer.css">
   <footer class="footer upper">
 
-    <div class="row justify-content-center">
+    <div class="row row-fix justify-content-center">
       <div class="col-sm-10 col-md-8 col-lg-6 col-xl-4 align-items-center" style="border-bottom: 2px solid; margin-bottom: 20px;">
         <img class="img-fluid" src="<?php bloginfo('template_directory');?>/assets/images/logos/biopartners.svg">
       </div>

@@ -1,4 +1,6 @@
-<?php get_header(); ?>
+<?php get_header("deep"); ?>
+</div>
+</div>
 
 <?php 
     $rows = get_persons_table("hallitus");

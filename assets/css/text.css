@@ -76,4 +76,8 @@ h5 {
   color: #bbb;
 }
 
-
+.error404 {
+  font-family: "Helvetica Neue";
+  font-size: 8em;
+  color: #333;
+}
