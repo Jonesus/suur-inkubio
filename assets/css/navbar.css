@@ -20,6 +20,11 @@
   margin-bottom: 10px;
 }
 
+#collapsingNavbar {
+  max-height: 80vh;
+  overflow: auto;
+}
+
 .superhidden {
   display: none !important;
 }
