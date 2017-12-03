@@ -4,7 +4,7 @@ $(document).ready(function(){
     $('li.active').removeClass('active');
     $('a[href="' + location.pathname + '"]').closest('li').addClass('active');
 
-    if (window.location.pathname.split("/").length == 5) {
+    if (window.location.pathname.split("/").length == 5 || window.location.pathname.split("/").length == 6) {
         var target = $("a[href*='" + window.location.pathname + "']").parent()
         target.addClass("active");
         target = target.parent().closest("li");
@@ -33,7 +33,10 @@ $(document).ready(function(){
         $(this).removeClass("active");
     });
   
-
+    if (!$('#page')[0] ||
+        $('.error404')[0]) {
+            $('#sidebar').addClass("superhidden");
+    }
 
     // Collapse sidebar into navbar
     $('#collapsingNavbar').on('show.bs.collapse', function (e) {
@@ -42,10 +45,13 @@ $(document).ready(function(){
             $('#collapsedSidebar .logotext').remove();
 
             // Open current nav and add highlight
-            var activetarget = $("a[href*='" + window.location.pathname + "']").parent().parent().closest("li").parent().closest("li");
-            activetarget.find("div:first").addClass("show");
-            activetarget.addClass("active");
-            activetarget.find("i:first").addClass("down");
+            if (window.location.pathname.includes("kiltalaisille") ||
+                window.location.pathname.includes("en/inkubytes")) {
+                var activetarget = $("a[href*='" + window.location.pathname + "']").parent().parent().closest("li").parent().closest("li");
+                activetarget.find("div:first").addClass("show");
+                activetarget.addClass("active");
+                activetarget.find("i:first").addClass("down");
+            }
         }
     });
     $('#collapsingNavbar').on('hidden.bs.collapse', function (e) {

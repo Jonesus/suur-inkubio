@@ -1,4 +1,7 @@
-<?php get_header(); ?>
+<?php /* Template Name: 404 Page */
+get_header("deep"); ?>
+</div>
+</div>
 
   <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/assets/css/page.css">
   <div class="background">
@@ -7,7 +10,7 @@
 
         <div class="error404 text-center">404</div>
         <img style="width:70%" class="rotate180 center" alt="" src="<?php bloginfo('template_directory');?>/assets/images/inkulogo-viher.svg">
-        <h3 style="margin-top: 50px;" class="text-center"><?php _e('Oho, jotain meni vikaan.') ?></h3>
+        <h3 style="margin-top: 50px;" class="text-center"><?php _e('Oho, jotain meni vikaan.', 'suurinkubio') ?></h3>
 
       </div>
     </div>
