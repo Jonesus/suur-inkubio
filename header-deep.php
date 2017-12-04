@@ -38,6 +38,15 @@
   
   <!-- Navbar -->
   <nav class="navbar navbar-expand-md fixed-top"  <?php echo (is_admin_bar_showing()) ? ' style="top: 32px;"' : ''; ?>>
+  <?php  
+    $lang = get_page_language();
+    if ( $lang == 'fi' ) {
+      $lang_url = "/";
+    } else {
+      $lang_url = "/en/";
+    }
+  ?>
+ 
     <a href="/" class="navbar-brand">
       <img alt="" src="<?php bloginfo('template_directory');?>/assets/images/inkulogo-viher.svg">
     </a>
@@ -49,19 +58,19 @@
     <div class="navbar-collapse collapse text-center" id="collapsingNavbar">
       <ul class="navbar-nav mx-auto w-100 justify-content-center">
         <li class="nav-item">
-          <a class="nav-link" href=<?php echo "/en/" . slugify_string(__('Abeille', 'suurinkubio')); ?>><?php _e('Abeille', 'suurinkubio') ?></a>
+          <a class="nav-link" href=<?php echo $lang_url . slugify_string(__('Abeille', 'suurinkubio')); ?>><?php _e('Abeille', 'suurinkubio') ?></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href=<?php echo "/en/" . slugify_string(__('Yrityksille', 'suurinkubio')); ?>><?php _e('Yrityksille', 'suurinkubio') ?></a>
+          <a class="nav-link" href=<?php echo $lang_url . slugify_string(__('Yrityksille', 'suurinkubio')); ?>><?php _e('Yrityksille', 'suurinkubio') ?></a>
         </li>
         <li class="nav-item">
           <a data-toggle="collapse" href="#collapsedSidebar" class="nav-link d-md-none d-lg-none d-xl-none"><?php _e('Kiltalaisille', 'suurinkubio') ?></a>
-          <a class="nav-link d-none d-md-block" href=<?php echo "/" . slugify_string(__('Kiltalaisille', 'suurinkubio')); ?>><?php _e('Kiltalaisille', 'suurinkubio') ?></a>
+          <a class="nav-link d-none d-md-block" href=<?php echo $lang_url . slugify_string(__('Kiltalaisille', 'suurinkubio')); ?>><?php _e('Kiltalaisille', 'suurinkubio') ?></a>
           <div class="navbar-collapse collapse" id="collapsedSidebar">
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href=<?php echo "/en/" . slugify_string(__('Ota yhteyttä', 'suurinkubio')); ?>><?php _e('Ota yhteyttä', 'suurinkubio') ?></a>
+          <a class="nav-link" href=<?php echo $lang_url . slugify_string(__('Ota yhteyttä', 'suurinkubio')); ?>><?php _e('Ota yhteyttä', 'suurinkubio') ?></a>
         </li>
        </ul>
 
@@ -84,12 +93,6 @@
       <ul class="nav navbar-nav" id="accordion">
 
       <?php
-        $lang = get_page_language();
-        if ( $lang == 'fi' ) {
-          $lang_url = "";
-        } else {
-          $lang_url = "en/";
-        }
         $prefix = __('Kiltalaisille', 'suurinkubio');
         $main = get_page_by_title( $prefix );
         $children = get_posts( array('post_type' => 'page',
@@ -113,7 +116,7 @@
 
               foreach($subchildren as $subchild) { ?>
               <li class="nav-item">
-                <a class="nav-link" href="<?php echo "/". $lang_url . strtolower(__('Kiltalaisille', 'suurinkubio')) ."/". $child->post_name ."/". $subchild->post_name ."/"?>" ><?php echo ucfirst($subchild->post_name) ?></a>
+                <a class="nav-link" href="<?php echo $lang_url . strtolower(__('Kiltalaisille', 'suurinkubio')) ."/". $child->post_name ."/". $subchild->post_name ."/"?>" ><?php echo ucfirst($subchild->post_name) ?></a>
               </li>
               <?php } ?>
 
