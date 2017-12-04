@@ -6,9 +6,14 @@ $(document).ready(function(){
 
     // Keep active nav highlighted
     $('li.active').removeClass('active');
-    $('a[href="' + location.pathname + '"]').closest('li').addClass('active');
+    var slugparts = window.location.pathname.split("/");
+    if (slugparts[1] == "en") {
+        $('a[href="/en/' + slugparts[2] + '"]').closest('li').addClass('active');
+    } else {
+        $('a[href="/' + slugparts[1] + '"]').closest('li').addClass('active');
+    }
 
-    if (window.location.pathname.split("/").length == 5 || window.location.pathname.split("/").length == 6) {
+    if (slugparts.length == 5 || slugparts.length == 6) {
         var target = $("a[href*='" + window.location.pathname + "']").parent()
         target.addClass("active");
         target = target.parent().closest("li");
