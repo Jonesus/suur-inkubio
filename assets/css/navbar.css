@@ -20,11 +20,6 @@
   margin-bottom: 10px;
 }
 
-#collapsingNavbar {
-  max-height: 80vh;
-  overflow: auto;
-}
-
 .superhidden {
   display: none !important;
 }
@@ -38,6 +33,7 @@
   padding-left: 1vw;
   padding-right: 1vw;
   font-family: coves;
+  white-space: nowrap;
 }
 
 .navbar .nav-lang {
@@ -83,6 +79,13 @@
 
   button:focus {
     outline: none;
+  }
+}
+
+@media (max-width: 768px) {
+  #collapsingNavbar {
+    max-height: 80vh;
+    overflow: auto;
   }
 }
 

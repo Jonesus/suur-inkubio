@@ -34,7 +34,7 @@
     <?php wp_head();?>
   </head>
 
-  <body>
+  <body class="preload">
   
   <!-- Navbar -->
   <nav class="navbar navbar-expand-md fixed-top"  <?php echo (is_admin_bar_showing()) ? ' style="top: 32px;"' : ''; ?>>
@@ -49,10 +49,10 @@
     <div class="navbar-collapse collapse text-center" id="collapsingNavbar">
       <ul class="navbar-nav mx-auto w-100 justify-content-center">
         <li class="nav-item">
-          <a class="nav-link" href=<?php echo "/" . slugify_string(__('Abeille', 'suurinkubio')); ?>><?php _e('Abeille', 'suurinkubio') ?></a>
+          <a class="nav-link" href=<?php echo "/en/" . slugify_string(__('Abeille', 'suurinkubio')); ?>><?php _e('Abeille', 'suurinkubio') ?></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href=<?php echo "/" . slugify_string(__('Yrityksille', 'suurinkubio')); ?>><?php _e('Yrityksille', 'suurinkubio') ?></a>
+          <a class="nav-link" href=<?php echo "/en/" . slugify_string(__('Yrityksille', 'suurinkubio')); ?>><?php _e('Yrityksille', 'suurinkubio') ?></a>
         </li>
         <li class="nav-item">
           <a data-toggle="collapse" href="#collapsedSidebar" class="nav-link d-md-none d-lg-none d-xl-none"><?php _e('Kiltalaisille', 'suurinkubio') ?></a>
@@ -61,7 +61,7 @@
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href=<?php echo "/" . slugify_string(__('Ota yhteyttä', 'suurinkubio')); ?>><?php _e('Ota yhteyttä', 'suurinkubio') ?></a>
+          <a class="nav-link" href=<?php echo "/en/" . slugify_string(__('Ota yhteyttä', 'suurinkubio')); ?>><?php _e('Ota yhteyttä', 'suurinkubio') ?></a>
         </li>
        </ul>
 

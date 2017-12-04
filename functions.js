@@ -1,3 +1,7 @@
+$(window).load(function() {
+    $("body").removeClass("preload");
+  });
+
 $(document).ready(function(){
 
     // Keep active nav highlighted
