@@ -22,7 +22,6 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
-    <script src="https://use.fontawesome.com/9899037e8f.js"></script>
     <script type="text/javascript" src="<?php bloginfo('template_directory');?>/functions.js"></script>
 
 
