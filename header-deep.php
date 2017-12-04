@@ -97,7 +97,9 @@
         $children = get_posts( array('post_type' => 'page',
                                      'post_parent' => $main->ID,
                                      'orderby' => 'menu_order',
-                                     'order' => 'ASC'
+                                     'order' => 'ASC',
+                                     'posts_per_page'=> -1, 
+                                     'numberposts'=> -1
                                     ));
         $i = 0;
 
@@ -110,7 +112,9 @@
               $subchildren = get_posts( array('post_type' => 'page',
                                               'post_parent' => $child->ID,
                                               'orderby' => 'menu_order',
-                                              'order' => 'ASC'
+                                              'order' => 'ASC',
+                                              'posts_per_page'=> -1, 
+                                              'numberposts'=> -1
                                               ));
 
               foreach($subchildren as $subchild) { ?>
