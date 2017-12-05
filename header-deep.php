@@ -9,6 +9,7 @@
     <meta name="author" content="">
 
     <title>Suur-Inkubio</title>
+    <link rel="icon" href="<?php bloginfo('template_directory');?>/assets/images/favicon.png">
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
