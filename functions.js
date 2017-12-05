@@ -21,8 +21,7 @@ $(document).ready(function(){
         target.find("div").addClass("show");
         
         if (window.innerWidth < 768) {
-            target = target.parent().closest("li");
-            target.find("div").addClass("show");
+            $("#collapsedSidebar").addClass("show");
         }
     }
 
