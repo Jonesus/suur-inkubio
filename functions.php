@@ -120,4 +120,12 @@ function fix_admin_toolbar() {
 }
 add_action( 'wp_head', 'fix_admin_toolbar' );
 
+
+// Remove unnecessary stuff from admin toolbar
+function remove_admin_menus() {
+    remove_menu_page( 'themes.php' );
+    remove_menu_page( 'tools.php' );
+}
+add_action( 'admin_menu', 'remove_admin_menus' );
+
 ?>
