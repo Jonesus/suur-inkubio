@@ -121,11 +121,21 @@ function fix_admin_toolbar() {
 add_action( 'wp_head', 'fix_admin_toolbar' );
 
 
+/*
+ * Modify admin view
+ */
+
 // Remove unnecessary stuff from admin toolbar
 function remove_admin_menus() {
     remove_menu_page( 'themes.php' );
     remove_menu_page( 'tools.php' );
 }
 add_action( 'admin_menu', 'remove_admin_menus' );
+
+// Fix admin footer text
+function update_admin_footer () {
+	echo '<span id="footer-thankyou">Jos lehmä osaisi koodata, sekään ei käyttäisi Drupalia</span>';
+}
+add_filter( 'admin_footer_text', 'update_admin_footer' );
 
 ?>
