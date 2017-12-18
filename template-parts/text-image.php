@@ -1,22 +1,25 @@
 <!-- Begin section -->
 <style>
     
-    html,body {
+    html,body
+    {
         width: 100%;
         height: 100%;
         margin: 0px;
         padding: 0px;
-        overflow-x: hidden; 
+        overflow-x: hidden; /*prevents white margin on the right of the screen but the menubar                       overlaps the scroll with this setting*/
     }
     
-    .page-section{
+    .page-section
+    {
         padding-bottom: 0px;
     }
     
 /*=====================================================================================   Style for jumbotron and it's divs
 =====================================================================================*/
     
-    .jumbotron {
+    .jumbotron
+    {
         background: url(http://localhost/wp-content/themes/suurinkubio/assets/images/frontpage/etu.jpg) center center;
         background-size: cover;
         border-radius: 0;
@@ -26,7 +29,8 @@
         margin-right: 0px;
     }
     
-    .jumbotron-text{
+    .jumbotron-text
+    {
         font-size: 19px;
         letter-spacing: 2px;
         font-weight: lighter;
@@ -36,7 +40,8 @@
         
     }
     
-    h1{
+    h1
+    {
         font-size: 4em
     }
     
@@ -47,13 +52,15 @@
 /*=====================================================================================   Style for twisted content
 =====================================================================================*/
     
-    .twist{
+    .twist
+    {
         margin-left: 0px;
         margin-right: 0px;
         box-shadow: 0px 0px 40px -6px #000;
     }
     
-    .title{
+    .title
+    {
         font-size: 35px;
         font-weight: bold;
     }
@@ -63,22 +70,31 @@
     
 /*=====================================================================================   Card-deck content styles
 =====================================================================================*/
-    .section2 {
+    .section2
+    {
         font-family: coves;
         font-weight: bold;
     }
     
-    .flip-container {
+    .flip-container 
+    {
         perspective: :1000px;
-        margin: 25px;
+        margin: 5px 25px;
+    }
+    
+    .flip-container:hover
+    {
+        box-shadow: 3px 20px 35px rgba(0,0,0,0.30), 0 6px 6px rgba(0,0,0,0.50);
     }
     
 
-    .flip1.hover, .flip2.hover, .flip3.hover, .flip4.hover, .flip5.hover, .flip6.hover {
+    .flip1.hover, .flip2.hover, .flip3.hover, .flip4.hover, .flip5.hover, .flip6.hover
+    {
 	   transform: rotateY(180deg);
     }
     
-    .flip-container, .front, .back {
+    .flip-container, .front, .back 
+    {
         width: 325px;
         height: 350px;
         transition: 0.6s;
@@ -90,47 +106,55 @@
         
     }
     
-    h4 {
+    h4 
+    {
         margin-top: 15px;
     }
     
-    .front, .back {
+    .front, .back 
+    {
         backface-visibility: hidden;
         position: absolute;
         top:0;
         left: 0;
     }
     
-    .front {
+    .front
+    {
         z-index:1;
         transform: rotateY(0deg);
     }
     
-    .image{
+    .image
+    {
         width: 275px;
         height: 300px;
         margin-left: 25px;
     }
     
-    .back{
+    .back
+    {
         transform: rotateY(180deg);
     }
     
-    .para {
+    .para 
+    {
         text-align: justify;
         padding: 20px;
     }
 
-    .rivi {
+    .rivi 
+    {
         background-color: transparent;
-        min-height: 70vh;
+        min-height: 47vh;
         margin-top: 25px;
         margin-bottom: 25px;
     }
     
-    .rivi2 {
+    .rivi2
+    {
         background-color: transparent;
-        min-height: 70vh;
+        min-height: 47vh;
         margin-bottom: 25px;
     }
     
@@ -141,7 +165,8 @@
 /*=====================================================================================   Yheistyö-section styles
 =====================================================================================*/
     
-    .content-page{
+    .content-page
+    {
         
         box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
         min-height: 50vh;
@@ -154,7 +179,8 @@
         
     }
     
-    .content-page h1{
+    .content-page h1
+    {
         margin: 10px;
         font-family: coves;
         font-size: 35px;
@@ -165,27 +191,32 @@
         text-shadow: none;
     }
     
-    .green-text{
+    .green-text
+    {
         color: #0ba360;
         font-size: 25px;
     }
     
-    .card-header{
+    .card-header
+    {
         background-color: white;
         border-bottom: none;
     }
         
-    #accordion > .card, #accordion2 > .card {
+    #accordion > .card, #accordion2 > .card 
+    {
         box-shadow: none;
         border-width: 2px;
     }
                 
-    a {
+    a 
+    {
        color: #0ba360;
        text-decoration: none; 
     }
     
-    a:hover, a:active {
+    a:hover, a:active 
+    {
        color: forestgreen;
        text-decoration: none; 
     }
@@ -196,7 +227,8 @@
     
 /*=====================================================================================  Contact section styles
 =====================================================================================*/
-    .fig img{
+    .fig img
+    {
         box-shadow: 0px 10px 10px rgba(0,0,0,0.5);
     }
 /*=====================================================================================  End for contact section styles
@@ -509,7 +541,7 @@
                         </div>
                       </div>
 
-                    <!--thid collapse item -->    
+                    <!--third collapse item -->    
                     <div class="card border-success">
                         <div class="card-header" role="tab" id="headingThree">
                             <h5 class="mb-0">
@@ -529,10 +561,10 @@
                         </div>
                     </div>
 
-                    </div><!--Accordion-->
-                </div><!--Left column grid-->
+                    </div><!--Accordion end -->
+                </div><!-- End of left column of collapde tabs-->
 
-                <!--second column of collapse-items -->
+                <!--second column of collapse tabs -->
                 <div class="col-sm-12 col-md-6 col-xl-5">
                     <div id="accordion2" role="tablist">
 
@@ -592,7 +624,7 @@
                       </div>
 
                     </div> <!--End of accordion-->
-                </div><!--End for right tab-panel row-->
+                </div><!--End for right column of tabs-->
 
             </div><!--End of collapse-tab-row -->
         </div><!--End of yhteistyö-section-row -->
@@ -630,6 +662,8 @@
             </div>       
         </div><!--End of twist upper-->
     </div>
+    
+    <div><br /><br /></div><!-- TUNK! This is done so there wouldn't be a white margin between                         twist-upper and footer -->
     
 </div>
 <!-- End section -->

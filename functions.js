@@ -65,7 +65,7 @@ $(document).ready(function(){
     })
     
                 
-    //card onclick animation on yrityksille site
+    //card onclick animation in yrityksille site
     var flip1 = document.querySelector('.flip1');
         flip1.addEventListener('click', function () {
             flip1.classList.toggle('hover') 
