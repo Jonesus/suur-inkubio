@@ -25,6 +25,15 @@ body {
   transition: none !important;
 }
 
+.admin-margin {
+  top: 32px;
+}
+
+@media (max-width: 782px) {
+  .admin-margin {
+    top: 46px;
+  }
+}
 
 /*
  * Single page app styling

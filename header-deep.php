@@ -37,7 +37,7 @@
   <body class="preload">
   
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-md fixed-top"  <?php echo (is_admin_bar_showing()) ? ' style="top: 32px;"' : ''; ?>>
+  <nav class="navbar navbar-expand-md fixed-top <?php echo (is_admin_bar_showing()) ? 'admin-margin' : '' ?>">
   <?php  
     $lang = get_page_language();
     if ( $lang == 'fi' ) {
