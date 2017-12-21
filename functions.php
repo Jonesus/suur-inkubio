@@ -113,7 +113,7 @@ function get_committee_member_ids($committee_id, $year) {
     // Returns list of committee members wp_user IDs
     global $wpdb;
     $query = $wpdb->prepare(
-        "SELECT m.ID
+        "SELECT DISTINCT m.ID
         FROM wp_users AS m, Fillers AS f
         WHERE f.member_ID=m.ID
         AND f.committee_ID=%d
@@ -129,7 +129,7 @@ function get_committee_chairperson_ids($committee_id, $year) {
     // Returns committee chairpersons wp_user ID
     global $wpdb;
     $query = $wpdb->prepare(
-        "SELECT m.ID
+        "SELECT DISTINCT m.ID
         FROM wp_users AS m, Fillers AS f, Chairs AS c
         WHERE m.ID=f.member_ID
         AND f.ID=c.filler_ID
