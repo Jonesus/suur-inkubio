@@ -71,5 +71,40 @@ $(document).ready(function(){
         if (window.innerWidth > 768) {$('#collapsingNavbar').collapse('hide');}
     });
 
-
+    //chevron animation in yrityksille site.
+    $('.collapse').on('show.bs.collapse', function () {
+            $(this).parent().find('.fa-chevron-right').removeClass('fa-chevron-right').addClass('fa-chevron-down')
+    }).on('hide.bs.collapse', function () {
+            $(this).parent().find('.fa-chevron-down').removeClass('fa-chevron-down').addClass('fa-chevron-right');
+    })
+    
+                
+    //card onclick animation in yrityksille site
+    var flip1 = document.querySelector('.flip1');
+        flip1.addEventListener('click', function () {
+            flip1.classList.toggle('hover') 
+    });
+    var flip2 = document.querySelector('.flip2');
+        flip2.addEventListener('click', function () {
+            flip2.classList.toggle('hover') 
+    });
+    var flip3 = document.querySelector('.flip3');
+        flip3.addEventListener('click', function () {
+            flip3.classList.toggle('hover') 
+    });
+    var flip4 = document.querySelector('.flip4');
+        flip4.addEventListener('click', function () {
+            flip4.classList.toggle('hover') 
+    });
+    var flip5 = document.querySelector('.flip5');
+        flip5.addEventListener('click', function () {
+            flip5.classList.toggle('hover') 
+    });
+    var flip6 = document.querySelector('.flip6');
+        flip6.addEventListener('click', function () {
+            flip6.classList.toggle('hover') 
+    });
 });
+
+
+
