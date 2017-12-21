@@ -1,4 +1,4 @@
-<div class="col-md-6 col-lg-6 col-xl-4 text-center">
+<div class="col-sm-6 col-md-6 col-lg-6 col-xl-4 text-center">
   <div class="person">
     <div class="person-img">
       <img class="rounded-circle img-fluid"
