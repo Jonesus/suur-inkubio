@@ -68,12 +68,6 @@ function get_language_links() {
 }
 
 function add_template($filename, $arguments) {
-    # Horrible hack to get path from echoed output
-    ob_start();
-    $basedir = bloginfo('template_directory');
-    $basedir = ob_get_contents();
-    ob_end_clean();
-
     # Assign args to a new variable for passing namespace to include
     $args = $arguments;
     include( locate_template('/template-parts/' . $filename, false, false));
@@ -96,6 +90,169 @@ function get_persons_table($tablename) {
     }
     return $ret;
 }
+
+
+/*---------------------------------*/
+/* Functions for querying database */
+/*---------------------------------*/
+
+function get_committee_id($committee) {
+    // Param finnish committee name, returns committee ID
+    global $wpdb;
+    $query = $wpdb->prepare(
+        "SELECT ID
+        FROM Committees
+        WHERE title_fi='%s';",
+        $committee
+    );
+    $committee_id = $wpdb->get_var($query);
+    return $committee_id;
+}
+
+function get_committee_member_ids($committee_id, $year) {
+    // Returns list of committee members wp_user IDs
+    global $wpdb;
+    $query = $wpdb->prepare(
+        "SELECT m.ID
+        FROM wp_users AS m, Fillers AS f
+        WHERE f.member_ID=m.ID
+        AND f.committee_ID=%d
+        AND f.year=%d;",
+        $committee_id, $year
+    );
+    $member_ids = $wpdb->get_col($query);
+    return $member_ids;
+
+}
+
+function get_committee_chairperson_ids($committee_id, $year) {
+    // Returns committee chairpersons wp_user ID
+    global $wpdb;
+    $query = $wpdb->prepare(
+        "SELECT m.ID
+        FROM wp_users AS m, Fillers AS f, Chairs AS c
+        WHERE m.ID=f.member_ID
+        AND f.ID=c.filler_ID
+        AND c.committee_ID=%d
+        AND f.year=%d;",
+        $committee_id, $year
+    );
+    $chairperson_ids = $wpdb->get_col($query);
+    return $chairperson_ids;
+}
+
+function get_committee_member_positions($committee_id, $member_id, $year) {
+    // Returns a member associative array
+    global $wpdb;
+    $query = $wpdb->prepare(
+        "SELECT p.title_fi,
+            p.title_en,
+            p.email,
+            m.display_name,
+            m.user_email,
+            f.picture_path
+        FROM Fillers AS f
+            INNER JOIN wp_users AS m
+                ON f.member_ID=m.ID
+            INNER JOIN Positions AS p
+                ON f.position_ID=p.ID
+            INNER JOIN Committees AS c
+                ON f.committee_ID=c.ID
+        WHERE f.member_ID=%d
+        AND f.committee_ID=%d
+        AND f.year=%d;",
+        $member_id, $committee_id, $year
+    );
+    $memberlist = $wpdb->get_results($query, ARRAY_A);
+
+    // Fallback for missing english position title
+    if (!$memberlist[0]['title_en']) {
+        $memberlist[0]['title_en'] = $memberlist[0]['title_fi'];
+    }
+    $member = array_shift($memberlist);
+
+    // Concat titles for both languages
+    foreach ($memberlist as $m) {
+        $member['title_fi'] .= ', '.$m['title_fi'];
+        if ($m['title_en']) {
+            $member['title_en'] .= ', '.$m['title_en'];
+        } else {
+            $member['title_en'] .= ', '.$m['title_fi'];
+        }
+    }
+    $meta = get_user_meta($member_id);
+    $member['phone_number'] = $meta['phone_number'];
+    if (!$member['picture_path']) {
+        $parts = explode(' ', strtolower($member['display_name']));
+        $member['picture_path'] = $year.'/'.$parts[0].'_'.$parts[1].'_'.$year.'.jpg';
+    }
+
+    return $member;
+}
+
+function get_committee_members($committee, $year) {
+    // Returns list of member associative arrays
+    $committee_members = Array();
+    $committee_id = get_committee_id($committee);
+    $member_ids = get_committee_member_ids($committee_id, $year);
+    $chair_ids = get_committee_chairperson_ids($committee_id, $year);
+
+    // Delete chairperson IDs from member_ids
+    foreach ($chair_ids as $cid) {
+        if (($key = array_search($cid, $member_ids)) !== false) {
+            unset($member_ids[$key]);
+        }
+    }
+    foreach ($member_ids as $id) {
+        $member = get_committee_member_positions($committee_id, $id, $year);
+        if (!in_array($member, $committee_members)) {
+            array_push($committee_members, $member);
+        }
+    }
+
+    return $committee_members;
+}
+
+function get_committee_chairs($committee, $year) {
+    // Returns list of chairpersons as member associative arrays
+    $chairs = Array();
+    $committee_id = get_committee_id($committee);
+    $chair_ids = get_committee_chairperson_ids($committee_id, $year);
+
+    foreach ($chair_ids as $id) {
+        $chairperson = get_committee_member_positions($committee_id, $id, $year);
+        if (!in_array($chairperson, $chairs)) {
+            array_push($chairs, $chairperson);
+        }
+    }
+
+    return $chairs;
+}
+
+function get_committee_titles($year) {
+    // Get all committee titles in finnish and english (except for the board)
+    global $wpdb;
+    $query = $wpdb->prepare(
+        "SELECT DISTINCT
+            title_fi,
+            title_en,
+            description_fi,
+            description_en
+        FROM Committees as c
+            INNER JOIN Fillers as f
+                ON c.ID=f.committee_ID
+        WHERE f.year=%d
+        AND c.title_fi!='Hallitus';",
+        $year
+    );
+    $committees = $wpdb->get_results($query, ARRAY_A);
+    return $committees;
+}
+
+
+/*--------------------------*/
+/* General helper functions */
+/*--------------------------*/
 
 function split_to_rows($arr, $columncount) {
     $ret = [];
