@@ -1,0 +1,225 @@
+   
+    .page-section
+    {
+        padding-bottom: 0px;
+    }
+    
+/*=====================================================================================   Style for jumbotron and it's divs
+=====================================================================================*/
+    
+    .jumbotron
+    {
+        background: url(http://localhost/wp-content/themes/suurinkubio/assets/images/frontpage/etu.jpg) center center;
+        background-size: cover;
+        border-radius: 0;
+        height: 800px;
+        box-shadow: inset 0px 0px 0px 1000px rgba(35,172,120,0.7);
+        margin-bottom: 0px;
+        margin-right: 0px;
+    }
+    
+    .jumbotron-text
+    {
+        font-size: 19px;
+        letter-spacing: 2px;
+        font-weight: lighter;
+        color: white;
+        text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+        margin-bottom: 0px;
+        
+    }
+    
+    h1
+    {
+        font-size: 4em
+    }
+    
+    
+/*=====================================================================================   End for jubotron styles
+=====================================================================================*/
+   
+/*=====================================================================================   Style for twisted content
+=====================================================================================*/
+    
+    .twist
+    {
+        margin-left: 0px;
+        margin-right: 0px;
+        box-shadow: 0px 0px 40px -6px #000;
+    }
+    
+    .title
+    {
+        font-size: 35px;
+        font-weight: bold;
+    }
+    
+/*=====================================================================================   End for twisted content styles
+=====================================================================================*/
+    
+/*=====================================================================================   Card-deck content styles
+=====================================================================================*/
+    .section2
+    {
+        font-family: coves;
+        font-weight: bold;
+    }
+    
+    .flip-container 
+    {
+        perspective: :1000px;
+        margin: 5px 25px;
+    }
+    
+    .flip-container:hover
+    {
+        box-shadow: 3px 20px 35px rgba(0,0,0,0.30), 0 6px 6px rgba(0,0,0,0.50);
+    }
+    
+
+    .flip1.hover, .flip2.hover, .flip3.hover, .flip4.hover, .flip5.hover, .flip6.hover
+    {
+	   transform: rotateY(180deg);
+    }
+    
+    .flip-container, .front, .back 
+    {
+        width: 325px;
+        height: 350px;
+        transition: 0.6s;
+        transform-style: preserve-3d;
+        background-color: white;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        border-radius: 7px;
+        position: relative;
+        
+    }
+    
+    h4 
+    {
+        margin-top: 15px;
+    }
+    
+    .front, .back 
+    {
+        backface-visibility: hidden;
+        position: absolute;
+        top:0;
+        left: 0;
+    }
+    
+    .front
+    {
+        z-index:1;
+        transform: rotateY(0deg);
+    }
+    
+    .image
+    {
+        width: 275px;
+        height: 300px;
+        margin-left: 25px;
+    }
+    
+    .back
+    {
+        transform: rotateY(180deg);
+    }
+    
+    .para 
+    {
+        text-align: justify;
+        padding: 20px;
+    }
+
+    .rivi 
+    {
+        background-color: transparent;
+        min-height: 47vh;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    
+    .rivi2
+    {
+        background-color: transparent;
+        min-height: 47vh;
+        margin-bottom: 25px;
+    }
+    
+    
+/*=====================================================================================   End for card-deck content styles
+=====================================================================================*/
+
+/*=====================================================================================   Yheistyö-section styles
+=====================================================================================*/
+    
+    .content-page
+    {
+        
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        min-height: 50vh;
+        padding: 40px;
+        padding-top: 20px;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        background-color: rgb(255, 255, 255);
+        height: 100%;
+        
+    }
+    
+    .content-page h1
+    {
+        margin: 10px;
+        font-family: coves;
+        font-size: 35px;
+        font-weight: bold;
+        margin-bottom: 35px;
+        color: #333;
+        border-bottom: 2px solid black;
+        text-shadow: none;
+    }
+    
+    .green-text
+    {
+        color: #0ba360;
+        font-size: 25px;
+    }
+    
+    .card-header
+    {
+        background-color: white;
+        border-bottom: none;
+    }
+        
+    #accordion > .card, #accordion2 > .card 
+    {
+        box-shadow: none;
+        border-width: 2px;
+    }
+                
+    a 
+    {
+       color: #0ba360;
+       text-decoration: none; 
+    }
+    
+    a:hover, a:active 
+    {
+       color: forestgreen;
+       text-decoration: none; 
+    }
+    
+
+/*=====================================================================================  End for Yheistyö-section styles
+=====================================================================================*/
+    
+/*=====================================================================================  Contact section styles
+=====================================================================================*/
+    .fig img
+    {
+        box-shadow: 0px 10px 10px rgba(0,0,0,0.5);
+    }
+/*=====================================================================================  End for contact section styles
+=====================================================================================*/
+ 
