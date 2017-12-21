@@ -208,6 +208,9 @@ function get_committee_member_positions($committee_id, $member_id, $year) {
         $parts = explode(' ', strtolower($member['display_name']));
         $member['picture_path'] = $year.'/'.$parts[0].'_'.$parts[1].'_'.$year.'.jpg';
     }
+    if (!$member['email']) {
+        $member['email'] = $member['user_email'];
+    }
 
     return $member;
 }
