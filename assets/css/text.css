@@ -12,6 +12,17 @@
   src: url("../fonts/coves.woff");
 }
 
+@font-face {
+  font-family: opensans;
+  src: url("../fonts/opensans.woff");
+}
+
+@font-face {
+  font-family: opensans-bold;
+  src: url("../fonts/opensans-bold.woff");
+}
+
+
 .estyle {
   font-family: inkubio;
   font-size: 37px;
@@ -80,4 +91,42 @@ h5 {
   font-family: "Helvetica Neue";
   font-size: 8em;
   color: #333;
+}
+
+.committee-title {
+  margin: 90px 0 40px 0;
+  font-family: coves;
+  font-size: 3em;
+  color: #444;
+  text-transform: uppercase;
+}
+
+.position-title {
+  font-family: opensans-bold;
+  font-size: 1em;
+  color: #444;
+  text-transform: uppercase;
+}
+
+.position-text {
+  font-family: opensans;
+  font-size: 1em;
+  color: #333;
+}
+
+/* Officials page text overflow fix */
+@media (max-width: 1350px) and (min-width: 1200px) {
+  .position-title, .position-text {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+  .committee-title {
+    font-size: 2.5em;
+  }
+}
+
+#page a {
+  color: rgb(68, 187, 133);
 }
