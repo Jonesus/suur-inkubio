@@ -41,9 +41,9 @@ $(document).ready(function(){
         $(this).removeClass("active");
     });
   
-    if (!$('#page')[0] ||
-        $('.error404')[0]) {
-            $('#sidebar').addClass("superhidden");
+    if (!(!$('#page')[0] ||
+        $('.error404')[0])) {
+            $('#sidebar').removeClass("superhidden");
     }
 
     // Collapse sidebar into navbar

@@ -87,7 +87,7 @@
 
   <!-- Sidebar -->
   <div class="row">
-    <nav class="col-md-3 col-xl-2 d-none d-md-block sidebar fixed-top" id="sidebar"  <?php echo (is_admin_bar_showing()) ? ' style="top: 32px;"' : ''; ?>>
+    <nav class="col-md-3 col-xl-2 d-none d-md-block sidebar fixed-top superhidden" id="sidebar"  <?php echo (is_admin_bar_showing()) ? ' style="top: 32px;"' : ''; ?>>
       <div class="logotext">
         <span class="estyle" style="margin-left: -9px;">Inkubio</span>
       </div>
