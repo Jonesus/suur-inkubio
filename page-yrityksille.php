@@ -75,7 +75,7 @@
                 <div class="front text-center">
                     <h4 class="card-title">Biosensing and bioelectronics</h4>
                     <div class="image">
-                        <img alt src="http://localhost/wp-content/themes/suurinkubio/assets/images/paa-ainelogot/biosensing_and_bioelectronics.svg">    
+                        <img alt src="<?php bloginfo('template_directory');?>/assets/images/paa-ainelogot/biosensing_and_bioelectronics.svg">    
                     </div>
                 </div>
                 
@@ -96,7 +96,7 @@
                 <div class="front text-center">
                     <h4 class="card-title">Human neuroscience and -technology</h4>
                     <div class="image">
-                        <img alt src="http://localhost/wp-content/themes/suurinkubio/assets/images/paa-ainelogot/human_neuroscience_and_technology.svg">
+                        <img alt src="<?php bloginfo('template_directory');?>/assets/images/paa-ainelogot/human_neuroscience_and_technology.svg">
                     </div>
                 </div>
 
@@ -118,7 +118,7 @@
                 <div class="front text-center">
                     <h4 class="card-title">Biosystems and biomaterials engineering</h4>
                     <div class="image">
-                        <img alt src="http://localhost/wp-content/themes/suurinkubio/assets/images/paa-ainelogot/biosystems_and_biomaterials_engineering.svg">
+                        <img alt src="<?php bloginfo('template_directory');?>/assets/images/paa-ainelogot/biosystems_and_biomaterials_engineering.svg">
                     </div>
                 </div>
 
@@ -147,7 +147,7 @@
                 <div class="front text-center">
                     <h4 class="card-title">Biomedical engineering</h4>
                     <div class="image">
-                        <img alt src="http://localhost/wp-content/themes/suurinkubio/assets/images/paa-ainelogot/biomedical_engineering.svg">    
+                        <img alt src="<?php bloginfo('template_directory');?>/assets/images/paa-ainelogot/biomedical_engineering.svg">    
                     </div>
                 </div>
                 
@@ -168,7 +168,7 @@
                 <div class="front text-center">
                     <h4 class="card-title">Complex systems</h4>
                     <div class="image">
-                        <img alt src="http://localhost/wp-content/themes/suurinkubio/assets/images/paa-ainelogot/complex_systems.svg" >
+                        <img alt src="<?php bloginfo('template_directory');?>/assets/images/paa-ainelogot/complex_systems.svg" >
                     </div>
                 </div>
 
@@ -190,7 +190,7 @@
                 <div class="front text-center">
                     <h4 class="card-title">Bioinformatics</h4>
                     <div class="image">
-                        <img alt src="http://localhost/wp-content/themes/suurinkubio/assets/images/paa-ainelogot/bioinformatics.svg">
+                        <img alt src="<?php bloginfo('template_directory');?>/assets/images/paa-ainelogot/bioinformatics.svg">
                     </div>
                 </div>
 
@@ -409,20 +409,20 @@
             </div>
             <div class="row twist-content justify-content-center align-items-center">
                 <div class="col-md-2 text-center text-justify fig">
-                    <img class="rounded-circle img-fluid" alt src="http://localhost/wp-content/themes/suurinkubio/assets/images/hallitus/nettisivuvastaava.jpg"><br /><br />
+                    <img class="rounded-circle img-fluid" alt src="<?php bloginfo('template_directory');?>/assets/images/hallitus/nettisivuvastaava.jpg"><br /><br />
                     <p class="card-title">Joonas Palosuo</p>
                     <p class="card-title">Nettisivutoimari<p>
                     <p class="card-title">joonas.palosuo@aalto.fi</p>
                     
                 </div>
                 <div class="col-md-3 text-center text-justify fig">
-                    <img class="rounded-circle img-fluid" alt src="http://localhost/wp-content/themes/suurinkubio/assets/images/hallitus/nettisivuvastaava.jpg"><br /><br />
+                    <img class="rounded-circle img-fluid" alt src="<?php bloginfo('template_directory');?>/assets/images/hallitus/nettisivuvastaava.jpg"><br /><br />
                     <p class="card-title">Joonas Palosuo</p>
                     <p class="card-title">Nettisivutoimari<p>
                     <p class="card-title">joonas.palosuo@aalto.fi</p>
                 </div>
                 <div class="col-md-2 text-center text-justify fig">
-                    <img class="rounded-circle img-fluid" alt src="http://localhost/wp-content/themes/suurinkubio/assets/images/hallitus/nettisivuvastaava.jpg"><br /><br />
+                    <img class="rounded-circle img-fluid" alt src="<?php bloginfo('template_directory');?>/assets/images/hallitus/nettisivuvastaava.jpg"><br /><br />
                     <p class="card-title">Joonas Palosuo</p>
                     <p class="card-title">Nettisivutoimari<p>
                     <p class="card-title">joonas.palosuo@aalto.fi</p>

@@ -2,7 +2,7 @@
 /*============ JUMBOTRON STYLES ====================================================*/
     .jumbotron
     {
-        background: url(http://localhost/wp-content/themes/suurinkubio/assets/images/frontpage/etu.jpg) center center;
+        background: url("../images/frontpage/etu.jpg") center center;
         background-size: cover;
         border-radius: 0;
         height: 800px;
