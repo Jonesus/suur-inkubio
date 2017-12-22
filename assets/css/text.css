@@ -127,6 +127,6 @@ h5 {
   }
 }
 
-#page a {
+.content-container a, #page a {
   color: rgb(68, 187, 133);
 }

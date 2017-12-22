@@ -4,7 +4,7 @@
     <?php $page = get_post(); ?>
 
     <div class="col-sm-12 col-md-9 offset-md-3 col-xl-10 offset-xl-2 ml-auto background">
-      <div class="row justify-content-center">
+      <div class="row content-container justify-content-center">
         <div id="page" class="col-sm-11 col-md-11 col-lg-9 col-xl-9 content-page">
 
           <h1 class="text-center"><?php echo get_the_title() ?></h1>
