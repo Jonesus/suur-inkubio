@@ -311,8 +311,12 @@ add_action( 'wp_head', 'fix_admin_toolbar' );
 function remove_admin_menus() {
     remove_menu_page( 'themes.php' );
     remove_menu_page( 'tools.php' );
-    remove_menu_page( 'edit.php' );
-    remove_menu_page( 'edit-comments.php' );
+    remove_menu_page( 'upload.php' );
+    remove_menu_page( 'edit.php?post_type=calendar' );
+    remove_menu_page( 'sb-instagram-feed' );
+    
+    //remove_menu_page( 'edit.php' );
+    //remove_menu_page( 'edit-comments.php' );
     remove_submenu_page( 'plugins.php', 'plugin-editor.php');
 }
 add_action( 'admin_menu', 'remove_admin_menus' );
