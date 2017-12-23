@@ -1,3 +1,13 @@
+<?php
+$page = get_post();
+$meta = get_post_meta($page->ID);
+if ($meta['redirect'][0]) {
+  $location = get_site_url() . $meta['redirect'][0];
+  wp_redirect( $location, 301 );
+  exit;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
