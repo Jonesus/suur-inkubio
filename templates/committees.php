@@ -22,26 +22,15 @@ get_header("deep"); ?>
           <?php foreach ($committees as $committee) :?>
 
             <?php
-              $committee = $committee['title_fi'];
-              $chairs = get_committee_chairs($committee, $year);
-              $members = get_committee_members($committee, $year);
+              add_template(
+                'committee-list.php',
+                [
+                  'committee' => $committee['title_fi'],
+                  'year' => $year,
+                  'show-committee-title' => true,
+                ]
+              );
             ?>
-
-            <div class="row justify-content-center">
-              <div class="committee-title text-center w-100">
-                <?php echo $committee; ?>
-              </div>
-              <?php foreach ($chairs as $chairperson) {
-                add_template('committee-profile.php', ['member' => $chairperson]);
-              }?>
-            </div>
-
-
-            <div class="row justify-content-center">
-              <?php foreach ($members as $member) {
-                add_template('committee-profile.php', ['member' => $member]);
-              }?>
-            </div>
 
           <?php endforeach; ?>
 

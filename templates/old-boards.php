@@ -30,17 +30,15 @@ get_header("deep"); ?>
                 <?php echo __('Hallitus', 'suurinkubio').' '.$year ?>
               </a>
               <div class="collapse" id="committeecollapse<?php echo $i ?>">
-                <div class="row justify-content-center">
-                  <?php foreach ($chairs as $chairperson) {
-                    add_template('committee-profile.php', ['member' => $chairperson]);
-                  }?>
-                </div>
-
-                <div class="row justify-content-center">
-                  <?php foreach ($members as $member) {
-                    add_template('committee-profile.php', ['member' => $member]);
-                  }?>
-                </div>
+                <?php
+                  add_template(
+                    'committee-list.php',
+                    [
+                      'committee' => $committee,
+                      'year' => $year,
+                    ]
+                  );
+                ?>
               </div>
             </li>
             <?php $i++; ?>

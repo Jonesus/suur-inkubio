@@ -16,21 +16,15 @@ get_header("deep"); ?>
           <?php
             $committee = 'Hallitus';
             $year = 2017;
-            $chairs = get_committee_chairs($committee, $year);
-            $members = get_committee_members($committee, $year);
+
+            add_template(
+              'committee-list.php',
+              [
+                'committee' => $committee,
+                'year' => $year,
+              ]
+            );
           ?>
-
-          <div class="row justify-content-center">
-            <?php foreach ($chairs as $chairperson) {
-              add_template('committee-profile.php', ['member' => $chairperson]);
-            }?>
-          </div>
-
-          <div class="row justify-content-center">
-            <?php foreach ($members as $member) {
-              add_template('committee-profile.php', ['member' => $member]);
-            }?>
-          </div>
 
         </div>
       </div>
