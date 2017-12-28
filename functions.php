@@ -89,7 +89,7 @@ function suurinkubio_widgets() {
 }
 add_action( 'widgets_init' , 'suurinkubio_widgets' );
 
-function add_template($filename, $arguments) {
+function add_template($filename, $arguments=null) {
     # Assign args to a new variable for passing namespace to include
     $args = $arguments;
     include( locate_template('/template-parts/' . $filename, false, false));
@@ -279,6 +279,21 @@ function get_committee_titles($year) {
 /* General helper functions */
 /*--------------------------*/
 
+function directory_to_array($dir) { 
+    $result = array();
+    $cdir = scandir($dir);
+    foreach ($cdir as $key => $value) {
+        if (!in_array($value, array(".", ".."))) {
+            if (is_dir($dir . DIRECTORY_SEPARATOR . $value)) {
+                $result[$value] = directory_to_array($dir . DIRECTORY_SEPARATOR . $value);
+            } else {
+                $result[] = $value;
+            }
+        }
+    }
+    return $result;
+}
+
 function split_to_rows($arr, $columncount) {
     $ret = [];
     $row = [];
@@ -303,9 +318,9 @@ function fix_admin_toolbar() {
 add_action( 'wp_head', 'fix_admin_toolbar' );
 
 
-/*
- * Modify admin view
- */
+/*-------------------*/
+/* Modify admin view */
+/*-------------------*/
 
 // Remove unnecessary stuff from admin toolbar
 function remove_admin_menus() {
