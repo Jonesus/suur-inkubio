@@ -274,6 +274,34 @@ function get_committee_titles($year) {
     return $committees;
 }
 
+function get_snapsi($year) {
+    global $wpdb;
+    $upload_url = wp_upload_dir()['baseurl'];
+    $query = $wpdb->prepare(
+        "SELECT picture_path, file_path
+        FROM Snapsi
+        WHERE year=%d",
+        $year
+    );
+    $snapsis = $wpdb->get_results($query, ARRAY_A);
+    foreach (range(0, count($snapsis)-1) as $i) {
+        if (!stristr($snapsis[$i]['file_path'], 'inkubio.fi')) {
+            $snapsis[$i]['file_path'] = $upload_url . DIRECTORY_SEPARATOR . 'snapsi' . DIRECTORY_SEPARATOR . $snapsis[$i]['file_path'];
+        }
+        $snapsis[$i]['picture_path'] = $upload_url . DIRECTORY_SEPARATOR . 'kuvat' . DIRECTORY_SEPARATOR . 'snapsi' . DIRECTORY_SEPARATOR . $snapsis[$i]['picture_path'];
+    }
+    return $snapsis;
+}
+
+function get_all_snapsi() {
+    $all = Array();
+    foreach (range(date('Y'), 2008) as $year) {
+        $snapsis = get_snapsi($year);
+        $all[$year] = $snapsis;
+    }
+    return $all;
+}
+
 
 /*--------------------------*/
 /* General helper functions */

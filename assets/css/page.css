@@ -123,3 +123,21 @@ form, .account-container {
 .form-row input {
   margin-right: 0.5rem;
 }
+
+
+.snapsi-container {
+  margin-right: -4vw;
+  margin-left: -4vw;
+}
+
+.snapsi {
+  width: 100%;
+  margin-bottom: 20px;
+  transition-duration: 0.4s;
+  box-shadow: 0 0 20px rgba(0,0,0,0.19);
+}
+
+.snapsi:hover {
+  transition-duration: 0.4s;
+  box-shadow: 0 6px 30px rgba(0,0,0,0.4);
+}
