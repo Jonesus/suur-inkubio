@@ -18,3 +18,11 @@
 .post-link > a {
     vertical-align: middle;
 }
+
+.post-info {
+  margin-left: -2vw;
+  font-family: coves;
+  font-weight: 500;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
