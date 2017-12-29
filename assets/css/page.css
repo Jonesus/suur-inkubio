@@ -14,6 +14,15 @@ h1 {
   margin: 10px -2vw;
 }
 
+h2 {
+  font-family: coves;
+  font-weight: 900;
+  font-size: 2em;
+  color: #333;
+  text-shadow: none;
+  letter-spacing: 0;
+}
+
 @media (max-width: 1200px) {
   h1 {
     font-size: 2.5em;
