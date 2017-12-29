@@ -91,6 +91,21 @@ img.center {
   font-size: 1.8em;
 }
 
+.document-list {
+  list-style-type: none;
+}
+
+.document-top {
+  margin-left: 20px;
+  margin-top: 40px;
+  font-size: 1.5em;
+}
+
+.document-item {
+  margin-left: 20px;
+  font-size: 1.2em;
+}
+
 /*
  * Signup and registration styles
  */

@@ -322,6 +322,17 @@ function directory_to_array($dir) {
     return $result;
 }
 
+function starts_with($haystack, $needle) {
+     $length = strlen($needle);
+     return (substr($haystack, 0, $length) === $needle);
+}
+
+function ends_with($haystack, $needle) {
+    $length = strlen($needle);
+    return $length === 0 || (substr($haystack, -$length) === $needle);
+}
+
+
 function split_to_rows($arr, $columncount) {
     $ret = [];
     $row = [];
