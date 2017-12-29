@@ -1,4 +1,4 @@
-<ul class="committee-list" id="committeeaccordion">
+<ul class="folding-list" id="committeeaccordion">
   <?php
     $i = 0;
     $now = 2017;
@@ -8,8 +8,8 @@
       $committees = get_committee_titles($year);
     ?>
 
-    <li class="committee-item">
-      <a class="committee-link" data-toggle="collapse" data-parent="#committeeaccordion" href="#committeecollapse<?php echo $i ?>">
+    <li class="folding-item">
+      <a data-toggle="collapse" data-parent="#committeeaccordion" href="#committeecollapse<?php echo $i ?>">
         <?php echo __('Toimihenkilöt', 'suurinkubio').' '.$year ?>
       </a>
       <div class="collapse" id="committeecollapse<?php echo $i ?>">
