@@ -71,11 +71,11 @@ get_header("deep"); ?>
             <div class="col-lg col-xl content-card">
               <h1><?php _e('Linkkejä', 'suurinkubio'); ?></h1>
               <ul class="link-list">
-                <li><a href=""><?php _e('Kiltiscam', 'suurinkubio'); ?></a></li>
-                <li><a href=""><?php _e('Ilmomasiina', 'suurinkubio'); ?></a></li>
-                <li><a href=""><?php _e('Kuvagalleria', 'suurinkubio'); ?></a></li>
-                <li><a href=""><?php _e('Otaniemen ruokalistat', 'suurinkubio'); ?></a></li>
-                <li><a href=""><?php _e('Tenttiarkisto', 'suurinkubio'); ?></a></li>
+                <li><a href="https://inkubio.fi/kiltiscam"><?php _e('Kiltiscam', 'suurinkubio'); ?></a></li>
+                <li><a href="https://inkubio.fi/ilmo"><?php _e('Ilmomasiina', 'suurinkubio'); ?></a></li>
+                <li><a href="https://inkubio.kuvat.fi"><?php _e('Kuvagalleria', 'suurinkubio'); ?></a></li>
+                <li><a href="https://ruokalistat.net"><?php _e('Otaniemen ruokalistat', 'suurinkubio'); ?></a></li>
+                <li><a href="http://tenttiarkisto.fi"><?php _e('Tenttiarkisto', 'suurinkubio'); ?></a></li>
               </ul>
             </div>
           </div>
