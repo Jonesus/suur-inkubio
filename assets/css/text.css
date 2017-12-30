@@ -97,7 +97,7 @@ h5 {
 .committee-title {
   margin: 90px 0 40px 0;
   font-family: coves;
-  font-size: 3em;
+  font-size: 2.5em;
   color: #444;
   text-transform: uppercase;
 }
@@ -124,7 +124,7 @@ h5 {
 
 @media (max-width: 1200px) {
   .committee-title {
-    font-size: 2.5em;
+    font-size: 2em;
   }
 }
 

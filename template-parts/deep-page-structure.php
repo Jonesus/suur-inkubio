@@ -7,7 +7,7 @@
       <div class="row content-container justify-content-center">
         <div id="page" class="col-sm-11 col-md-11 col-lg-9 col-xl-9 content-page">
 
-          <h1 class="text-center"><?php echo get_the_title() ?></h1>
+          <h1><?php echo get_the_title() ?></h1>
           <?php echo apply_filters('the_content', $page->post_content); ?>
 
           <?php if (isset($args['template'])) {
