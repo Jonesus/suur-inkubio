@@ -1,4 +1,5 @@
-    
+
+
 /*============ JUMBOTRON STYLES ====================================================*/
     .jumbotron
     {
@@ -104,3 +105,21 @@
     
 /*===========================================================================================*/
  
+.title-text {
+    margin-top: 10vh;
+}
+
+@media (max-width: 1200px) {
+    .jumbotron-header {
+        padding-right: 0;
+    }
+    .jumbotron-text {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .title-text {
+        margin-top: 5vh;
+    }
+}

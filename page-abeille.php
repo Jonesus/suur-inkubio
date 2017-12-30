@@ -15,7 +15,7 @@ get_header("deep"); ?>
 <div class="jumbotron">
   <div class="container">
     <div class ="row">
-      <div class=" col-sm-10 col-md-12 title-text text-center">
+      <div class="col-12 title-text text-center">
 
         <h1 class = "jumbotron-header">
           <?php echo $meta['jumbotron-header'][0]; ?>
