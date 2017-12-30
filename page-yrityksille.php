@@ -297,6 +297,24 @@
               </div>
             </div>
 
+            <div class="card border-success">
+              <div class="card-header" role="tab" id="headingSeven">
+                <h5 class="mb-0">
+                  <a class="collapsed" data-toggle="collapse" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSix">
+                    <i class="fa fa-fw fa-chevron-down" aria-hidden="true"></i>
+                    <?php echo $meta['accordion-2-title-4'][0]; ?>
+                  </a>
+                </h5>
+              </div>
+              <div id="collapseSeven" class="collapse" role="tabpanel" aria-labelledby="headingSeven" data-parent="#accordion2">
+                <div class="card-body">
+                  <?php echo $meta['accordion-2-text-4'][0]; ?>
+                </div>
+              </div>
+            </div>
+
+
+
           </div> <!--End of accordion-->
         </div><!--End for right column of tabs-->
 
