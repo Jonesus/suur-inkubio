@@ -149,19 +149,19 @@ get_header("deep"); ?>
       <!--Second row inside white box-->        
       <div class="row justify-content-center">
         <!--left text-->
-        <div class="col-lg-12 col-xl-3 text-justify">
+        <div class="col-lg-12 col-xl-4 text-justify">
           <p class="paragraph-text">
             <?php echo $meta['section-2-subtext-1'][0]; ?>
           </p>
         </div>
         <!--middle text-->
-        <div class="col-lg-12 col-xl-3 text-justify">
+        <div class="col-lg-12 col-xl-4 text-justify">
           <p class="paragraph-text">
             <?php echo $meta['section-2-subtext-2'][0]; ?>
           </p>
         </div>
         <!--right text-->
-        <div class="col-lg-12 col-xl-3 text-justify">
+        <div class="col-lg-12 col-xl-4 text-justify">
           <p class="paragraph-text">
             <?php echo $meta['section-2-subtext-3'][0]; ?>
           </p>
