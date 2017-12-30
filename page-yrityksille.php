@@ -4,6 +4,10 @@
 
 <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/assets/css/yrityksille.css">
 <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/assets/css/front.css">
+<?php
+  $page = get_post();
+  $meta = get_post_meta($page->ID);
+?>
 
 <!--Jumbotron-->
 <div class="jumbotron">
