@@ -105,6 +105,7 @@ body {
 
 .title {
   font-family: coves;
+  text-transform: uppercase;
   font-size: 4em;
   border-bottom: 2px solid #555;
   margin-bottom: 20px;
@@ -128,7 +129,6 @@ body {
   background-color: rgb(255, 255, 255);
   padding: 20px;
   margin: 20px auto;
-  max-width: 60vw;
 }
 
 .row-fix {
