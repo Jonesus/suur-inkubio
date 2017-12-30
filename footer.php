@@ -38,8 +38,8 @@
 
     <div class="row row-fix justify-content-between">
       <div class="bottom left col-xl-5 order-xl-1 order-2">
-        <i>Jos lehmä osaisi lentää<span style="font-size:0.7em;">,</span> olisi sen suunnitellut bioDI</i><br/>
-        Inkubio ry <?php echo date('Y'); ?>
+        Inkubio ry <?php echo date('Y'); ?><br/>
+        <i>Jos lehmä osaisi lentää<span style="font-size:0.7em;">,</span> olisi sen suunnitellut bioDI</i>
       </div>
       <div class="bottom right col-xl-5 order-xl-2 order-1">
         <a href="https://www.facebook.com/inkubio/">Facebook</a>
