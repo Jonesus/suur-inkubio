@@ -3,7 +3,7 @@
   <footer class="footer upper">
 
     <div class="row row-fix justify-content-center">
-      <div class="col-11 col-sm-10 col-md-8 col-lg-6 col-xl-4 align-items-center" style="border-bottom: 2px solid; margin-bottom: 20px;">
+      <div class="col-10 col-sm-10 col-md-8 col-lg-6 col-xl-4 align-items-center" style="border-bottom: 2px solid; margin-bottom: 20px;">
         <img class="img-fluid" src="<?php bloginfo('template_directory');?>/assets/images/logos/biopartners.svg">
       </div>
     </div>
@@ -36,13 +36,14 @@
       </div>
     </div>
 
-    <div class="d-flex justify-content-between" style="padding-top: 30px;">
-      <div style="padding-left: 6vw;">
+    <div class="row row-fix justify-content-between">
+      <div class="bottom left col-xl-5 order-xl-1 order-2">
+        <i>Jos lehmä osaisi lentää<span style="font-size:0.7em;">,</span> olisi sen suunnitellut bioDI</i><br/>
         Inkubio ry 2017
       </div>
-      <div style="padding-right: 6vw;">
+      <div class="bottom right col-xl-5 order-xl-2 order-1">
         <a href="https://www.facebook.com/inkubio/">Facebook</a>
-        <a href="https://twitter.com/inkubio">Twitter</a>
+        <a href="https://twitter.com/inkubio/">Twitter</a>
         <a href="https://www.instagram.com/inkubio/">Instagram</a>
         <a href="https://www.linkedin.com/groups/8533430/profile">LinkedIn</a>
       </div>

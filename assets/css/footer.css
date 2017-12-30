@@ -26,3 +26,24 @@
   min-height: 100%;
   padding: 20px;
 }
+
+.bottom {
+  padding-top: 30px;
+}
+
+span {
+  font-family: opensans;
+  font-size: 0.7em;
+}
+
+@media (min-width: 1200px) {
+  .left {
+    padding-left: 50px;
+    padding-top: 17px;
+    text-align: left;
+  }
+  .right {
+    padding-right: 50px;
+    text-align: right;
+  }
+}
