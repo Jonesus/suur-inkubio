@@ -49,44 +49,6 @@
         padding: 30px;
     }
     
-    .header3
-    {
-        font-size: 25px;
-        font-weight: bold;
-    }
-    
-    .card-header
-    {
-        background-color: white;
-        border-bottom: none;
-        padding: 0;
-    }
-    
-    #accordion > .card, #accordion2 > .card 
-    {
-        box-shadow: none;
-        border-width: 2px;
-        border-radius: 10px;
-    }
-                
-    a 
-    {
-        color: #0ba360;
-        text-decoration: none;
-    }
-
-    a:hover, a:active 
-    {
-        color: forestgreen;
-        text-decoration: none; 
-        color: 
-    }
-
-    .mb-0 {
-        text-transform: uppercase;
-        font-size: 1.7rem;
-    }
-    
     .esim
     {
         font-size: 25px; 

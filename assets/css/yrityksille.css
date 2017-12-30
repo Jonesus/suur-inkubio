@@ -1,9 +1,3 @@
-   
-    .page-section
-    {
-        padding-bottom: 0px;
-    }
-    
 /*=====================================================================================   Style for jumbotron and it's divs
 =====================================================================================*/
     
@@ -13,9 +7,10 @@
         background-size: cover;
         border-radius: 0;
         height: 800px;
-        box-shadow: inset 0px 0px 0px 1000px rgba(35,172,120,0.7);
+        box-shadow: inset 0px 0px 0px 1000px rgba(35,172,120,0.7), 0px 0px 40px -6px #000;
         margin-bottom: 0px;
         margin-right: 0px;
+        position: relative;
     }
     
     .jumbotron-text
@@ -27,11 +22,6 @@
         text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
         margin-bottom: 0px;
         
-    }
-    
-    h1
-    {
-        font-size: 4em
     }
     
     
@@ -50,8 +40,17 @@
     
     .title
     {
-        font-size: 35px;
+        font-size: 45px;
         font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    p {
+        font-size: 1.3rem;
+        color: #444;
+    }
+    .question {
+        font-size: 55px;
     }
     
 /*=====================================================================================   End for twisted content styles
@@ -61,6 +60,7 @@
 =====================================================================================*/
     .section2
     {
+        margin-top: 200px;
         font-family: coves;
         font-weight: bold;
     }
@@ -68,7 +68,7 @@
     .flip-container 
     {
         perspective: 1000px;
-        margin: 5px 25px;
+        margin: 25px 25px;
         box-shadow: 0 5px 10px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     }
     
@@ -86,7 +86,7 @@
     .flip-container, .front, .back 
     {
         width: 325px;
-        height: 350px;
+        height: 325px;
         transition: 0.6s;
         transform-style: preserve-3d;
         background-color: white;
@@ -97,7 +97,11 @@
     
     h4 
     {
-        margin-top: 15px;
+        margin-top: 10px;
+        padding: 0 10px;
+        font-weight: 900;
+        font-size: 2rem;
+        margin-bottom: 5px;
     }
     
     .front, .back 
@@ -116,9 +120,8 @@
     
     .image
     {
-        width: 275px;
-        height: 300px;
-        margin-left: 25px;
+        height: 270px;
+        padding: 10px 50px;
     }
     
     .back
@@ -132,21 +135,6 @@
         padding: 20px;
     }
 
-    .rivi 
-    {
-        background-color: transparent;
-        min-height: 47vh;
-        margin-top: 25px;
-        margin-bottom: 25px;
-    }
-    
-    .rivi2
-    {
-        background-color: transparent;
-        min-height: 47vh;
-        margin-bottom: 25px;
-    }
-    
     
 /*=====================================================================================   End for card-deck content styles
 =====================================================================================*/
@@ -186,29 +174,6 @@
         font-size: 25px;
     }
     
-    .card-header
-    {
-        background-color: white;
-        border-bottom: none;
-    }
-        
-    #accordion > .card, #accordion2 > .card 
-    {
-        box-shadow: none;
-        border-width: 2px;
-    }
-                
-    a 
-    {
-       color: #0ba360;
-       text-decoration: none; 
-    }
-    
-    a:hover, a:active 
-    {
-       color: forestgreen;
-       text-decoration: none; 
-    }
     
 
 /*=====================================================================================  End for Yheistyö-section styles

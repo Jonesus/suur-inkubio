@@ -215,6 +215,52 @@ function get_committee_member_positions($committee_id, $member_id, $year) {
     return $member;
 }
 
+function get_recent_position_filler($position_id) {
+    global $wpdb;
+    $year = date('Y') + 1;
+    $filler = null;
+    while (!isset($filler) && $year > 2002) {
+        $year--;
+        $query = $wpdb->prepare(
+            "SELECT p.title_fi,
+                p.title_en,
+                p.email,
+                m.display_name,
+                m.user_email,
+                f.picture_path,
+                m.ID
+            FROM Fillers AS f
+                INNER JOIN wp_users AS m
+                    ON f.member_ID=m.ID
+                INNER JOIN Positions AS p
+                    ON f.position_ID=p.ID
+            WHERE f.position_ID=%d
+            AND f.year=%d;",
+            $position_id, $year
+        );
+        $results = $wpdb->get_results($query, ARRAY_A);
+        if (isset($results)) {
+            $filler = array_shift($results);
+        }
+    }
+
+    if (!$filler['title_en']) {
+        $filler['title_en'] = $filler['title_fi'];
+    }
+
+    $meta = get_user_meta($filler['ID']);
+    $filler['phone_number'] = $meta['phone_number'];
+    if (!$filler['picture_path']) {
+        $parts = explode(' ', strtolower($filler['display_name']));
+        $filler['picture_path'] = $year.'/'.$parts[0].'_'.$parts[1].'_'.$year.'.jpg';
+    }
+    if (!$filler['email']) {
+        $filler['email'] = $filler['user_email'];
+    }
+
+    return $filler;
+}
+
 function get_committee_members($committee, $year) {
     // Returns list of member associative arrays
     $committee_members = Array();
@@ -272,6 +318,19 @@ function get_committee_titles($year) {
     );
     $committees = $wpdb->get_results($query, ARRAY_A);
     return $committees;
+}
+
+function get_position_filler($position) {
+    global $wpdb;
+    $query = $wpdb->prepare(
+        "SELECT ID
+        FROM Positions
+        WHERE title_fi='%s'",
+        $position
+    );
+    $position_id = $wpdb->get_var($query);
+    $filler = get_recent_position_filler($position_id);
+    return $filler;
 }
 
 function get_snapsi($year) {

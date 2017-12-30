@@ -4,6 +4,7 @@ get_header("deep"); ?>
 </div>
 
 <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/assets/css/abeille.css">
+<link rel="stylesheet" href="<?php bloginfo('template_directory');?>/assets/css/front.css">
 <?php
   $page = get_post();
   $meta = get_post_meta($page->ID);
@@ -75,7 +76,7 @@ get_header("deep"); ?>
 
         <!--left column of collapse tabs-->
         <div class="col-sm-12 col-md-6 col-xl-5">
-          <div id="accordion" role="tablist">
+          <div id="accordion1" role="tablist">
 
             <!--first collapse tab-->
             <div class="card border-success">
@@ -89,7 +90,7 @@ get_header("deep"); ?>
               </div>
 
               <!--collapsing content-->
-              <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+              <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion1">
                 <div class="card-body">
                   <?php echo $meta['bachelors-examples'][0]; ?>
                 </div>
@@ -191,7 +192,7 @@ get_header("deep"); ?>
   <div class="twist upper">
     <div class="row twist-content justify-content-center">
       <div class="justify-content-center">
-        <div class=" col-sm-12 col-md-12 col-xl-12 title text-center">
+        <div class="col-sm-12 col-md-12 col-xl-12 title text-center">
           <?php echo $meta['section-3-title'][0]; ?>
         </div>
       </div>

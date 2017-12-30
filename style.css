@@ -66,8 +66,8 @@ body {
   width: 100%;
   margin-top: 7vw;
   margin-bottom: 7vw;
-  padding-top: 10vw;
-  padding-bottom: 10vw;
+  padding-top: 7vw;
+  padding-bottom: 7vw;
   background: rgb(255, 255, 255);
   -ms-transform: skewy(-7deg); /* IE 9 */
   -webkit-transform: skewY(-7deg); /* Chrome, Safari, Opera */
