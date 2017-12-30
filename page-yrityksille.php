@@ -186,7 +186,7 @@
 
         <!--left column of collapse tabs-->
         <div class="col-sm-12 col-md-6 col-xl-5">
-          <h5 class="mb-0 text-center"><?php _e('Näkyvyyttä', 'suurinkubio'); ?></h5>
+          <h5 style="margin-top:30px;" class="mb-0 text-center"><?php _e('Näkyvyyttä', 'suurinkubio'); ?></h5>
           <div id="accordion1" role="tablist">
 
             <!--first collapse tab-->
@@ -246,7 +246,7 @@
 
         <!--second column of collapse tabs -->
         <div class="col-sm-12 col-md-6 col-xl-5">
-          <h5 class="mb-0 text-center"><?php _e('Tapahtumia', 'suurinkubio'); ?></h5>
+          <h5 style="margin-top:30px;" class="mb-0 text-center"><?php _e('Tapahtumia', 'suurinkubio'); ?></h5>
           <div id="accordion2" role="tablist">
 
             <div class="card border-success">
