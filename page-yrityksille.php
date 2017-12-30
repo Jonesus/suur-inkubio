@@ -319,13 +319,13 @@
         $excursiovastaava = get_position_filler("Excursiovastaava");
       ?>
       <div class="row twist-content justify-content-center align-items-center">
-        <div class="col-md-2 text-center text-justify fig">
+        <div class="col-xl-2 col-lg-5 col-md-6 col-7 order-xl-1 order-2 text-center text-justify fig">
           <img class="rounded-circle img-fluid"
             alt=""
             src="<?php echo content_url()."/uploads/kuvat/".$excursiovastaava['picture_path'];?>"
             onerror="this.src='<?php echo get_template_directory_uri()?>/assets/images/hallitus/maikki.jpg'"
           ><br/><br/>
-          <p class="card-title"><?php echo $excursiovastaava['title_fi']; ?></p>
+          <p class="card-title"><strong><?php echo $excursiovastaava['title_fi']; ?></strong></p>
           <p class="card-title"><?php echo $excursiovastaava['display_name']; ?></p>
           <p class="card-title">
             <a href="mailto:<?php echo $excursiovastaava["email"]; ?>">
@@ -333,13 +333,13 @@
             </a>
           </p>
         </div>
-        <div class="col-md-3 text-center text-justify fig">
+        <div class="col-xl-3 col-8 order-1 order-xl-2 text-center text-justify fig">
            <img class="rounded-circle img-fluid"
             alt=""
             src="<?php echo content_url()."/uploads/kuvat/".$yrityssuhdemestari['picture_path'];?>"
             onerror="this.src='<?php echo get_template_directory_uri()?>/assets/images/hallitus/maikki.jpg'"
           ><br/><br/>
-          <p class="card-title"><?php echo $yrityssuhdemestari['title_fi']; ?></p>
+          <p class="card-title"><strong><?php echo $yrityssuhdemestari['title_fi']; ?></strong></p>
           <p class="card-title"><?php echo $yrityssuhdemestari['display_name']; ?></p>
           <p class="card-title">
             <a href="mailto:<?php echo $yrityssuhdemestari["email"]; ?>">
@@ -347,13 +347,13 @@
             </a>
           </p>
         </div>
-        <div class="col-md-2 text-center text-justify fig">
+        <div class="col-xl-2 col-lg-5 col-md-6 col-7 order-3 text-center text-justify fig">
           <img class="rounded-circle img-fluid"
             alt=""
             src="<?php echo content_url()."/uploads/kuvat/".$tiedotusmestari['picture_path'];?>"
             onerror="this.src='<?php echo get_template_directory_uri()?>/assets/images/hallitus/maikki.jpg'"
           ><br/><br/>
-          <p class="card-title"><?php echo $tiedotusmestari['title_fi']; ?></p>
+          <p class="card-title"><strong><?php echo $tiedotusmestari['title_fi']; ?></strong></p>
           <p class="card-title"><?php echo $tiedotusmestari['display_name']; ?></p>
           <p class="card-title">
             <a href="mailto:<?php echo $tiedotusmestari["email"]; ?>">
