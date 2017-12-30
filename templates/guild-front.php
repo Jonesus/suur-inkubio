@@ -59,7 +59,7 @@ get_header("deep"); ?>
           </div>
 
           <div class="row justify-content-between">
-            <div class="col-lg col-xl content-card">
+            <div class="col-xl content-card">
               <h1><?php _e('Tulevat tapahtumat', 'suurinkubio'); ?></h1>
               <?php echo do_shortcode('[calendar id="340"]');?>
 
@@ -68,7 +68,7 @@ get_header("deep"); ?>
               </div>
             </div>
             <div class="d-none d-lg-block col-lg-1 col-xl-1"></div>
-            <div class="col-lg col-xl content-card">
+            <div class="col-xl content-card">
               <h1><?php _e('Linkkejä', 'suurinkubio'); ?></h1>
               <ul class="link-list">
                 <li><a href="https://inkubio.fi/kiltiscam"><?php _e('Kiltiscam', 'suurinkubio'); ?></a></li>
