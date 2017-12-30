@@ -55,7 +55,7 @@ get_header("deep"); ?>
       <!--Second row inside white box-->        
       <div class="row justify-content-center">
         <!--left text-->
-        <div class="col-sm-12 col-md-5 col-xl-5 text-justify">
+        <div class="col-sm-12 col-md-5 col-xl-5 order-1 text-justify">
           <h3 class="text-center header3"><?php echo $meta['section-1-subtitle-1'][0]; ?></h3>
           <p class="paragraph-text">
             <?php echo $meta['section-1-subtitle-1-text'][0]; ?>
@@ -63,19 +63,17 @@ get_header("deep"); ?>
         </div>
         
         <!--right text-->
-        <div class="col-sm-12 col-md-5 col-xl-5 text-justify">
+        <div class="col-sm-12 col-md-5 col-xl-5 order-3 order-md-2 text-justify">
           <h3 class="text-center header3"><?php echo $meta['section-1-subtitle-2'][0]; ?></h3>
           <p class="paragraph-text">
             <?php echo $meta['section-1-subtitle-2-text'][0]; ?>
           </p>
         </div>
-      </div><!--End of second row in white box-->
       
-      <!--Collapse tabs-->
-      <div class="row justify-content-center">
+        <!--Collapse tabs-->
 
         <!--left column of collapse tabs-->
-        <div class="col-sm-12 col-md-6 col-xl-5">
+        <div class="col-sm-12 col-md-6 col-xl-5 order-2 order-md-3">
           <div id="accordion1" role="tablist">
 
             <!--first collapse tab-->
@@ -100,7 +98,7 @@ get_header("deep"); ?>
         </div><!-- End of left column of collapde tabs-->
         
         <!--second column of collapse tabs -->
-        <div class="col-sm-12 col-md-6 col-xl-5">
+        <div class="col-sm-12 col-md-6 col-xl-5 order-4">
           <div id="accordion2" role="tablist">
 
             <!--first collapse tab-->

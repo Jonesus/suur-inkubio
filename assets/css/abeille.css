@@ -122,4 +122,10 @@
     .title-text {
         margin-top: 5vh;
     }
+    .title {
+        font-size: 3em;
+    }
+    .mb-0 {
+        font-size: 1.3rem !important;
+    }
 }
