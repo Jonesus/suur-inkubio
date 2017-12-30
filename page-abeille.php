@@ -28,6 +28,8 @@ get_header("deep"); ?>
   </div>
 </div><!--jumbotron end-->
 
+
+
 <div class="page-section">
   <div class="row justify-content-center row-fix">
     <!--white "A4-paper"-box -->
@@ -121,10 +123,11 @@ get_header("deep"); ?>
         </div><!--End for right column of tabs-->
 
       </div><!--End of collapse-tab-row -->
-      <div><br /><br /><br /><br /></div><!-- Some extra length for the A4 -->
     </div><!-- End of first "A4-page" -->
   </div><!-- End of the row -->
   
+
+
   <div class="row justify-content-center row-fix">
     <!--white "A4-paper"-box -->
     <div class="col-sm-12 col-md-12 col-lg-10 col-xl-10 content-page"><!-- Creates a white margin to the right-->
@@ -147,19 +150,19 @@ get_header("deep"); ?>
       <!--Second row inside white box-->        
       <div class="row justify-content-center">
         <!--left text-->
-        <div class="col-md-12 col-lg-4 col-xl-3 text-justify">
+        <div class="col-lg-12 col-xl-3 text-justify">
           <p class="paragraph-text">
             <?php echo $meta['section-2-subtext-1'][0]; ?>
           </p>
         </div>
         <!--middle text-->
-        <div class="col-md-12 col-lg-4 col-xl-3 text-justify">
+        <div class="col-lg-12 col-xl-3 text-justify">
           <p class="paragraph-text">
             <?php echo $meta['section-2-subtext-2'][0]; ?>
           </p>
         </div>
         <!--right text-->
-        <div class="col-md-12 col-md-4 col-xl-3 text-justify">
+        <div class="col-lg-12 col-xl-3 text-justify">
           <p class="paragraph-text">
             <?php echo $meta['section-2-subtext-3'][0]; ?>
           </p>
@@ -180,10 +183,11 @@ get_header("deep"); ?>
         </div>
       </div>
 
-      <div><br /><br /><br /><br /></div><!-- Some extra length for the A4 -->
     </div><!-- End of second "A4-page" -->    
   </div> <!-- End of the row -->
   
+
+
   <div class="twist upper">
     <div class="row twist-content justify-content-center">
       <div class="justify-content-center">
