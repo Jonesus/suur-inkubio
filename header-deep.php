@@ -6,6 +6,15 @@ if ($meta['redirect'][0]) {
   wp_redirect( $location, 301 );
   exit;
 }
+if (is_front_page()) {
+  if (is_user_logged_in()) {
+    wp_redirect('/kiltalaisille/kilta/ajankohtaista');
+    exit;
+  } else {
+    wp_redirect('/etusivu');
+    exit;
+  }
+}
 ?>
 
 <!DOCTYPE html>
@@ -58,7 +67,7 @@ if ($meta['redirect'][0]) {
     }
   ?>
  
-    <a href="/" class="navbar-brand">
+    <a href="/etusivu" class="navbar-brand">
       <img alt="" src="<?php bloginfo('template_directory');?>/assets/images/inkulogo-viher.svg">
     </a>
     <button class="navbar-toggler hamburger hamburger--spin" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
