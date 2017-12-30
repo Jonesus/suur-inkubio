@@ -122,6 +122,19 @@
     max-height: 80vh;
     overflow: auto;
   }
+  .navbar .nav-item {
+    font-size: 50px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .active>.nav-link:before,
+  .navbar .nav-link:hover:before,
+  .nav-item:focus {
+    visibility: hidden;
+  }
+  .nav-lang {
+    font-size: 30px;
+  }
 }
 
 
