@@ -211,7 +211,7 @@
               <div class="card-header" role="tab" id="headingTwo">
                 <h5 class="mb-0">
                   <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    <i class="fa fa-fw fa-chevron-right"></i>
+                    <i class="fa fa-fw fa-chevron-down"></i>
                     <?php echo $meta['accordion-1-title-2'][0]; ?>
                   </a>
                 </h5>
@@ -228,7 +228,7 @@
               <div class="card-header" role="tab" id="headingThree">
                 <h5 class="mb-0">
                   <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    <i class="fa fa-fw fa-chevron-right"></i>
+                    <i class="fa fa-fw fa-chevron-down"></i>
                     <?php echo $meta['accordion-1-title-3'][0]; ?>
                   </a>
                 </h5>
@@ -250,7 +250,7 @@
             <div class="card border-success">
               <div class="card-header" role="tab" id="headingFour">
                 <h5 class="mb-0">
-                  <a class="collapsed" data-toggle="collapse" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  <a data-toggle="collapse" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                     <i class="fa fa-fw fa-chevron-down"></i>
                     <?php echo $meta['accordion-2-title-1'][0]; ?>
                   </a>
@@ -267,7 +267,7 @@
               <div class="card-header" role="tab" id="headingFive">
                 <h5 class="mb-0">
                   <a class="collapsed" data-toggle="collapse" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                    <i class="fa fa-fw fa-chevron-right"></i>
+                    <i class="fa fa-fw fa-chevron-down"></i>
                     <?php echo $meta['accordion-2-title-2'][0]; ?>
                   </a>
                 </h5>
@@ -283,7 +283,7 @@
               <div class="card-header" role="tab" id="headingSix">
                 <h5 class="mb-0">
                   <a class="collapsed" data-toggle="collapse" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                    <i class="fa fa-fw fa-chevron-right" aria-hidden="true"></i>
+                    <i class="fa fa-fw fa-chevron-down" aria-hidden="true"></i>
                     <?php echo $meta['accordion-2-title-3'][0]; ?>
                   </a>
                 </h5>
