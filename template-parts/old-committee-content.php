@@ -9,7 +9,8 @@
     ?>
 
     <li class="folding-item">
-      <a data-toggle="collapse" data-parent="#committeeaccordion" href="#committeecollapse<?php echo $i ?>">
+      <a class="collapsed" data-toggle="collapse" data-parent="#committeeaccordion" href="#committeecollapse<?php echo $i ?>">
+        <i class="fa fa-fw fa-chevron-down"></i>
         <?php echo __('Toimihenkilöt', 'suurinkubio').' '.$year ?>
       </a>
       <div class="collapse" id="committeecollapse<?php echo $i ?>">
