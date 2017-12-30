@@ -239,7 +239,26 @@
                   <?php echo $meta['accordion-1-text-3'][0]; ?>
                 </div>
               </div>
+           </div>
+
+            <!--fourth collapse item -->  
+            <div class="card border-success">
+              <div class="card-header" role="tab" id="headingEight">
+                <h5 class="mb-0">
+                  <a class="collapsed" data-toggle="collapse" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                    <i class="fa fa-fw fa-chevron-down"></i>
+                    <?php echo $meta['accordion-1-title-4'][0]; ?>
+                  </a>
+                </h5>
+              </div>
+              <div id="collapseEight" class="collapse" role="tabpanel" aria-labelledby="headingEight" data-parent="#accordion1">
+                <div class="card-body">
+                  <?php echo $meta['accordion-1-text-4'][0]; ?>
+                </div>
+              </div>
             </div>
+
+
 
           </div><!--Accordion end -->
         </div><!-- End of left column of collapde tabs-->
