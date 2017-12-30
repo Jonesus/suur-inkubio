@@ -82,8 +82,8 @@ get_header("deep"); ?>
             <div class="card border-success">
               <div class="card-header" role="tab" id="headingOne">
                 <h5 class="mb-0">
-                  <a data-toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                   <i class="fa fa-fw fa-chevron-right"></i>
+                  <a class="collapsed" data-toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                   <i class="fa fa-fw fa-chevron-down"></i>
                    <?php _e('Kandin esimerkkikursseja', 'suurinkubio'); ?>
                   </a>
                 </h5>
@@ -107,8 +107,8 @@ get_header("deep"); ?>
             <div class="card border-success">
               <div class="card-header" role="tab" id="headingFour">
                 <h5 class="mb-0">
-                  <a data-toggle="collapse" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    <i class="fa fa-fw fa-chevron-right"></i>
+                  <a class="collapsed" data-toggle="collapse" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <i class="fa fa-fw fa-chevron-down"></i>
                     <?php _e('Maisterin esimerkkikursseja', 'suurinkubio'); ?>
                   </a>
                 </h5>
