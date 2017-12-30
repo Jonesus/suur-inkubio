@@ -9,7 +9,7 @@
     </div>
     <div class="position-title text-center"><?php echo $args['member']["title_fi"]?></div>
     <div class="position-text text-center"><?php echo $args['member']["display_name"]?></div>
-    <a href="mailto:<?php echo $args['member']["user_email"]?>" class="position-text text-center">
+    <a href="mailto:<?php echo $args['member']["email"]?>" class="position-text text-center">
       <?php echo $args['member']["email"]?>
     </a>
   </div>
