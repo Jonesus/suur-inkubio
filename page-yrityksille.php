@@ -186,6 +186,7 @@
 
         <!--left column of collapse tabs-->
         <div class="col-sm-12 col-md-6 col-xl-5">
+          <h5 class="mb-0 text-center"><?php _e('Näkyvyyttä', 'suurinkubio'); ?></h5>
           <div id="accordion1" role="tablist">
 
             <!--first collapse tab-->
@@ -199,7 +200,7 @@
                 </h5>
               </div>
               <!--collapsing content-->
-              <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion1">
+              <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion1">
                 <div class="card-body">
                   <?php echo $meta['accordion-1-text-1'][0]; ?>
                 </div>
@@ -245,6 +246,7 @@
 
         <!--second column of collapse tabs -->
         <div class="col-sm-12 col-md-6 col-xl-5">
+          <h5 class="mb-0 text-center"><?php _e('Tapahtumia', 'suurinkubio'); ?></h5>
           <div id="accordion2" role="tablist">
 
             <div class="card border-success">
@@ -256,7 +258,7 @@
                   </a>
                 </h5>
               </div>
-              <div id="collapseFour" class="collapse show" role="tabpanel" aria-labelledby="headingFour" data-parent="#accordion2">
+              <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour" data-parent="#accordion2">
                 <div class="card-body">
                   <?php echo $meta['accordion-2-text-1'][0]; ?>
                 </div>
