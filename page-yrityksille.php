@@ -193,7 +193,7 @@
             <div class="card border-success">
               <div class="card-header" role="tab" id="headingOne">
                 <h5 class="mb-0">
-                  <a data-toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  <a class="collapsed" data-toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                     <i class="fa fa-fw fa-chevron-down"></i>
                     <?php echo $meta['accordion-1-title-1'][0]; ?>
                   </a>
@@ -252,7 +252,7 @@
             <div class="card border-success">
               <div class="card-header" role="tab" id="headingFour">
                 <h5 class="mb-0">
-                  <a data-toggle="collapse" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  <a class="collapsed" data-toggle="collapse" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                     <i class="fa fa-fw fa-chevron-down"></i>
                     <?php echo $meta['accordion-2-title-1'][0]; ?>
                   </a>
