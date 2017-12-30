@@ -104,17 +104,15 @@ h5 {
 
 .position-title {
   font-family: opensans-bold;
-  font-size: 1em;
+  font-size: 0.8em;
   color: #444;
   text-transform: uppercase;
-  word-break: break-all;
 }
 
 .position-text {
   font-family: opensans;
-  font-size: 1em;
+  font-size: 0.8em;
   color: #333;
-  word-break: break-all;
 }
 
 /* Officials page text overflow fix */
