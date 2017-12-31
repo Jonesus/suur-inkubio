@@ -74,7 +74,7 @@
         [
           'flip' => 'flip1',
           'image' => 'biosensing_and_bioelectronics.svg',
-          'title' => 'Biosensing and bioelectronics',
+          'title' => 'Biosensing and Bioelectronics',
           'content' => $meta['biosensing-and-bioelectronics'][0],
         ]
       ); ?>
@@ -85,7 +85,7 @@
         [
           'flip' => 'flip2',
           'image' => 'human_neuroscience_and_technology.svg',
-          'title' => 'Human neuroscience and -technology',
+          'title' => 'Human Neuroscience and Technology',
           'content' => $meta['human-neuroscience-and-technology'][0],
         ]
       ); ?>
@@ -96,7 +96,7 @@
         [
           'flip' => 'flip3',
           'image' => 'biosystems_and_biomaterials_engineering.svg',
-          'title' => 'Biosystems and biomaterials engineering',
+          'title' => 'Biosystems and Biomaterials Engineering',
           'content' => $meta['biosystems-and-biomaterials-engineering'][0],
         ]
       ); ?>
@@ -107,7 +107,7 @@
         [
           'flip' => 'flip4',
           'image' => 'biomedical_engineering.svg',
-          'title' => 'Biomedical engineering',
+          'title' => 'Biomedical Engineering',
           'content' => $meta['biomedical-engineering'][0],
         ]
       ); ?>
@@ -118,7 +118,7 @@
         [
           'flip' => 'flip5',
           'image' => 'complex_systems.svg',
-          'title' => 'Complex systems',
+          'title' => 'Complex Systems',
           'content' => $meta['complex-systems'][0],
         ]
       ); ?>
@@ -129,7 +129,7 @@
         [
           'flip' => 'flip6',
           'image' => 'bioinformatics.svg',
-          'title' => 'Bioinformatics',
+          'title' => 'Bioinformatics and Digital Health',
           'content' => $meta['bioinformatics'][0],
         ]
       ); ?>
