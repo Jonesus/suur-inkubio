@@ -11,6 +11,7 @@
       'committee-list.php',
       [
         'committee' => $committee['title_fi'],
+        'committee_en' => $committee['title_en'],
         'year' => $year,
         'show-committee-title' => true,
       ]

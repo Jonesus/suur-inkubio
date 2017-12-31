@@ -8,7 +8,7 @@
 <div class="row justify-content-center">
   <?php if ($args['show-committee-title']) : ?>
     <div class="committee-title text-center w-100">
-      <?php echo $committee; ?>
+      <?php echo (get_page_language() == 'fi') ? $committee : $args['committee_en']; ?>
     </div>
   <?php endif; ?>
   <?php foreach ($chairs as $chairperson) {
