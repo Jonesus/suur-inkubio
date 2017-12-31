@@ -61,7 +61,7 @@ get_header("deep"); ?>
           <div class="row justify-content-between">
             <div class="col-xl content-card">
               <h1><?php _e('Tulevat tapahtumat', 'suurinkubio'); ?></h1>
-              <?php echo do_shortcode('[calendar id="340"]');?>
+              <?php echo do_shortcode('[calendar id="296"]');?>
 
               <div class="calendar-link">
                 <a href="<?php echo '' ?>"><?php _e('Tapahtumakalenteri', 'suurinkubio'); ?></a>
