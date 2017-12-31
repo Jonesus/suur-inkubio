@@ -26,6 +26,9 @@
           ]
         );
       ?>
+      <a class="text-right" style="font-size: 2em;" data-toggle="collapse" href="#committeecollapse<?php echo $i ?>">
+        <i class="fa fa-fw fa-chevron-up"></i>
+      </a>
     </div>
   </li>
   <?php $i++; ?>
