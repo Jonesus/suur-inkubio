@@ -88,7 +88,7 @@ if (is_front_page()) {
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Suur-Inkubio</title>
+    <title>Inkubio ry</title>
     <link rel="icon" href="<?php bloginfo('template_directory');?>/assets/images/favicon.png">
 
     <!-- Bootstrap core CSS -->
