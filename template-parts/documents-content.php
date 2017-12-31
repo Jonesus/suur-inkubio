@@ -6,7 +6,7 @@
   $i = 0;
 ?>
 
-<ul class="folding-list" id="documentaccordion">
+<ul class="folding-list" id="documentaccordion2">
   <?php foreach ($keys as $year) : ?>
 
     <li class="folding-item">

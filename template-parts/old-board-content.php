@@ -1,4 +1,4 @@
-<ul class="folding-list" id="committeeaccordion">
+<ul class="folding-list" id="committeeaccordion2">
 
 <?php
   $i = 0;
