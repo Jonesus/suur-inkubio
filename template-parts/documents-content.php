@@ -10,7 +10,8 @@
   <?php foreach ($keys as $year) : ?>
 
     <li class="folding-item">
-      <a data-toggle="collapse" data-parent="#documentaccordion" href="#documentcollapse<?php echo $i ?>">
+      <a class="<?php echo ($i == 0) ? '' : 'collapsed' ?>" data-toggle="collapse" data-parent="#documentaccordion" href="#documentcollapse<?php echo $i ?>">
+        <i class="fa fa-fw fa-chevron-down"></i>
         <?php echo $year; ?>
       </a>
       <div class="collapse <?php echo ($i == 0) ? 'show' : '' ?>" id="documentcollapse<?php echo $i ?>">
