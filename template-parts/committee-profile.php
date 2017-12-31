@@ -7,7 +7,7 @@
         onerror="this.src='<?php echo get_template_directory_uri()?>/assets/images/hallitus/maikki.jpg'"
       >
     </div>
-    <div class="position-title text-center"><?php echo $args['member']["title_fi"]?></div>
+    <div class="position-title text-center"><?php echo (get_page_language() == 'fi') ? $args['member']["title_fi"] : $args['member']['title_en']; ?></div>
     <div class="position-text text-center"><?php echo $args['member']["display_name"]?></div>
     <a href="mailto:<?php echo $args['member']["email"]?>" class="position-text text-center">
       <?php echo $args['member']["email"]?>

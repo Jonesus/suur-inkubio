@@ -188,7 +188,7 @@ function get_committee_member_positions($committee_id, $member_id, $year) {
     $memberlist = $wpdb->get_results($query, ARRAY_A);
 
     // Fallback for missing english position title
-    if (!$memberlist[0]['title_en']) {
+    if ($memberlist[0]['title_en'] == "") {
         $memberlist[0]['title_en'] = $memberlist[0]['title_fi'];
     }
     $member = array_shift($memberlist);
@@ -196,7 +196,7 @@ function get_committee_member_positions($committee_id, $member_id, $year) {
     // Concat titles for both languages
     foreach ($memberlist as $m) {
         $member['title_fi'] .= ', '.$m['title_fi'];
-        if ($m['title_en']) {
+        if ($m['title_en'] != "") {
             $member['title_en'] .= ', '.$m['title_en'];
         } else {
             $member['title_en'] .= ', '.$m['title_fi'];
