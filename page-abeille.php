@@ -45,7 +45,7 @@ get_header("deep"); ?>
       
       <!--First row inside white box-->
       <div class="row justify-content-center">
-        <div class="col-sm-12 col-md-10 col-xl-10 text-justify">
+        <div class="col-sm-12 col-md-10 col-lg-8 col-xl-6 text-justify">
           <p class="paragraph-text">
             <?php echo $meta['section-1-text'][0]; ?>
           </p>
@@ -139,7 +139,7 @@ get_header("deep"); ?>
       
       <!--First row inside white box-->
       <div class="row justify-content-center">
-        <div class="col-sm-12 col-md-12 col-xl-9 text-justify">
+        <div class="col-sm-12 col-md-10 col-lg-8 col-xl-6 text-justify">
           <p class="paragraph-text">
             <?php echo $meta['section-2-text'][0]; ?>
           </p>
