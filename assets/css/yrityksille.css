@@ -134,6 +134,9 @@
         font-weight: 500;
         font-size: 1.1rem;
     }
+    .back>.para {
+        text-align: left;
+    }
 
     
 /*=====================================================================================   End for card-deck content styles
