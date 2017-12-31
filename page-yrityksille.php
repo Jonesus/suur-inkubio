@@ -153,7 +153,7 @@
       <!--First row inside white box-->
       <div class="row justify-content-center">
         <!--left text-->
-        <div class="col-sm-12 col-md-6 col-xl-5 text-justify">
+        <div class="col-sm-12 col-md-9 col-lg-7 col-xl-5 text-justify">
           <p class="paragraph-text">
             <?php echo $meta['section-2-subtext-1'][0]; ?>
           </p>
