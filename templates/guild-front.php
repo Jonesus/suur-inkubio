@@ -15,8 +15,10 @@ get_header("deep"); ?>
           <?php if ($meta['banner_img'][0]) : ?>
             <div class="row justify-content-center">
               <div class="col-12 content-card no-padding">
-                <img class="banner-img" src="<?php echo $meta['banner_img'][0]; ?>"></img>
-                <div class="text-overlay"><?php echo $meta['banner_text'][0]; ?></div>
+                <a href="<?php echo $meta['banner_link'][0]; ?>">
+                  <img class="banner-img" src="<?php echo $meta['banner_img'][0]; ?>"></img>
+                  <div class="text-overlay"><?php echo $meta['banner_text'][0]; ?></div>
+                </a>
               </div>
             </div>
           <?php endif; ?>
