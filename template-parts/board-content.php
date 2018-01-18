@@ -1,6 +1,6 @@
 <?php
   $committee = 'Hallitus';
-  $year = 2017;
+  $year = date('Y');
 
   add_template(
     'committee-list.php',

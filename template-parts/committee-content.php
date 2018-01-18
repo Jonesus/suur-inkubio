@@ -1,6 +1,5 @@
 <?php
   $year = date("Y");
-  $year = 2017;
   $committees = get_committee_titles($year);
 ?>
 

@@ -12,7 +12,7 @@ get_header("deep"); ?>
 <div class="page-section bg-image upper" style="background-image: url(<?php bloginfo('template_directory');?>/assets/images/frontpage/circuit_background.svg);">
   <div class="row padded-row">
     <div class="col-lg-12 title-text text-center">
-      <h1 style="font-size: calc(8em + 5vw);">Inkubio</h1>
+      <h1 style="font-size: 8em;">Inkubio</h1>
       <h2><?php echo (get_page_language() == 'fi') ? "BIOINFORMAATIO&shy;TEKNOLOGIAN KILTA" : "Guild of bioinformation technology"; ?></h2>
     </div>
   </div>

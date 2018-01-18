@@ -66,7 +66,7 @@ get_header("deep"); ?>
               <?php echo do_shortcode('[calendar id="296"]');?>
 
               <div class="calendar-link">
-                <a href="<?php echo '' ?>"><?php _e('Tapahtumakalenteri', 'suurinkubio'); ?></a>
+                <a href="<?php echo $meta['event_calendar_link'][0]; ?>"><?php _e('Tapahtumakalenteri', 'suurinkubio'); ?></a>
               </div>
             </div>
             <div class="d-none d-lg-block col-lg-1 col-xl-1"></div>
