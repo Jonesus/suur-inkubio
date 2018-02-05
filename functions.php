@@ -136,7 +136,7 @@ function get_committee_member_ids($committee_id, $year) {
     global $wpdb;
     $query = $wpdb->prepare(
         "SELECT DISTINCT m.ID
-        FROM ".$wpdb->prefix."users AS m, Fillers AS f
+        FROM wp_suurinkubio_users AS m, Fillers AS f
         WHERE f.member_ID=m.ID
         AND f.committee_ID=%d
         AND f.year=%d;",
@@ -152,7 +152,7 @@ function get_committee_chairperson_ids($committee_id, $year) {
     global $wpdb;
     $query = $wpdb->prepare(
         "SELECT DISTINCT m.ID
-        FROM ".$wpdb->prefix."users AS m, Fillers AS f, Chairs AS c
+        FROM wp_suurinkubio_users AS m, Fillers AS f, Chairs AS c
         WHERE m.ID=f.member_ID
         AND f.ID=c.filler_ID
         AND c.committee_ID=%d
@@ -174,7 +174,7 @@ function get_committee_member_positions($committee_id, $member_id, $year) {
             m.user_email,
             f.picture_path
         FROM Fillers AS f
-            INNER JOIN ".$wpdb->prefix."users AS m
+            INNER JOIN wp_suurinkubio_users AS m
                 ON f.member_ID=m.ID
             INNER JOIN Positions AS p
                 ON f.position_ID=p.ID
@@ -230,7 +230,7 @@ function get_recent_position_filler($position_id) {
                 f.picture_path,
                 m.ID
             FROM Fillers AS f
-                INNER JOIN ".$wpdb->prefix."users AS m
+                INNER JOIN wp_suurinkubio_users AS m
                     ON f.member_ID=m.ID
                 INNER JOIN Positions AS p
                     ON f.position_ID=p.ID

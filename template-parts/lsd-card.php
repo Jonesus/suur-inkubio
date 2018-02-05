@@ -1,5 +1,4 @@
 <div class="flip-container <?php echo $args['flip']; ?>">
-  
   <!--frontside of the card-->  
   <div class="front text-center">
     <h4><?php echo $args['title']; ?></h4>

@@ -61,7 +61,12 @@
     
     .flip-container 
     {
+        -webkit-perspective: 1000px;
         perspective: 1000px;
+        -webkit-transition: 0.6s;
+        transition: 0.6s;
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
         margin: 25px 25px;
         box-shadow: 0 5px 10px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     }
@@ -74,15 +79,14 @@
 
     .flip1.hover, .flip2.hover, .flip3.hover, .flip4.hover, .flip5.hover, .flip6.hover
     {
-	   transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
     }
     
     .flip-container, .front, .back 
     {
         width: 325px;
         height: 325px;
-        transition: 0.6s;
-        transform-style: preserve-3d;
         background-color: white;
         border-radius: 7px;
         position: relative;
@@ -100,6 +104,7 @@
     
     .front, .back 
     {
+        -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
         position: absolute;
         top:0;
@@ -108,7 +113,7 @@
     
     .front
     {
-        z-index:1;
+        -webkit-transform: rotateY(0deg);
         transform: rotateY(0deg);
     }
     
@@ -120,7 +125,9 @@
     
     .back
     {
+        -webkit-transform: rotateY(180deg);
         transform: rotateY(180deg);
+	z-index: 9999;
     }
     
     .para 
@@ -128,7 +135,7 @@
         text-align: justify;
         padding: 20px;
         padding-top: 5px;
-        height: 210px;
+        height: 240px;
         overflow: hidden;
         font-family: opensans;
         font-weight: 500;
