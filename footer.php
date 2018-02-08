@@ -34,6 +34,11 @@
           <img class="img-fluid" src="<?php bloginfo('template_directory');?>/assets/images/logos/ge.svg">
         </a>
       </div>
+      <div class="col-9 col-sm-6 col-md-5 col-lg-4 col-xl-2 align-items-center">
+        <a href="https://atalent.fi/">
+          <img class="img-fluid" src="<?php bloginfo('template_directory');?>/assets/images/logos/atalent.svg">
+        </a>
+      </div>
     </div>
 
     <div class="row row-fix justify-content-between">
