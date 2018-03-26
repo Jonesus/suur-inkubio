@@ -354,7 +354,7 @@ function get_snapsi($year) {
 
 function get_all_snapsi() {
     $all = Array();
-    $year = 2017;
+    $year = date('Y');
     foreach (range($year, 2008) as $year) {
         $snapsis = get_snapsi($year);
         $all[$year] = $snapsis;
