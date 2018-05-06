@@ -441,4 +441,27 @@ function update_admin_footer () {
 }
 add_filter( 'admin_footer_text', 'update_admin_footer' );
 
+// Enable reply input field below comment
+function enqueue_comment_reply_script() {
+    if ( get_option( 'thread_comments' ) ) {
+        wp_enqueue_script( 'comment_reply' );
+    }
+}
+add_action( 'comment_form_before', 'enqueue_comment_reply_script' );
+
+add_action('comment_text', 'comments_img_embed', 2);
+function comments_img_embed($comment) {
+   $size = get_option('option_eiic');
+   return preg_replace_callback(
+      array( '#(http://([^\s]*)(\..*)\.(jpg|jpeg|gif|png|JPG|JPEG|GIF|PNG))#', '#(https://([^\s]*)\.(jpg|jpeg|gif|png|JPG|JPEG|GIF|PNG))#' ),
+      function( $matches ) use ( $size ) {
+          if ( ! empty( $matches ) ) {
+              $url = esc_url( $matches[0] );
+              return sprintf( '<a rel="nofollow" href="%s"><img src="%s" alt="" width="%s" height="" /></a>', $url, $url, esc_attr( $size ) );
+          }
+      },
+      $comment
+   );
+}
+
 ?>

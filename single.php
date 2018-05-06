@@ -16,6 +16,11 @@
           <?php echo apply_filters('the_content', $post->post_content); ?>
         </div>
 
+        <div id="page" class="col-11 col-sm-11 col-md-11 col-lg-9 col-xl-9 post-comments">
+          <h2 class="comments-title"><?php _e('Comments') ?></h2>  
+          <?php comments_template(); ?>
+        </div>
+
         <div class="col-sm-11 col-md-10 col-lg-8 col-xl-6">
           <div class="row justify-content-between">
 

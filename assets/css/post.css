@@ -28,3 +28,117 @@
   font-size: 1.2em;
   text-transform: uppercase;
 }
+
+.post-comments {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  min-height: 150px;
+  padding: 5vh 8vw;
+  padding-top: 30px;
+  margin-top: 50px;
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+}
+
+.comments-title {
+  margin-top: 30px;
+}
+
+/* Reply styles */
+.comment-form-comment > label {
+  display: block;
+}
+
+.comment-form-comment {
+  padding-right: 0;
+}
+
+.comment-form {
+  margin: 0;
+}
+
+.comment-form textarea {
+  width: 100%;
+  height: 20vw;
+  min-height: 200px;
+}
+
+.comment-reply-title {
+  padding-top: 80px;
+  margin-left: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-bottom: 0;
+}
+
+.comment-form > p {
+  margin: 0;
+  padding-left: 0;
+}
+
+.comment-form > .logged-in-as {
+  padding-top: 0;
+  font-size: 0.85em;
+}
+
+/* comments styles */
+h3#comments {
+  margin-top: 30px;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.commentlist {
+  padding-left: 0;
+}
+
+.commentlist, ul.children {
+  list-style-type: none;
+}
+
+ul.children {
+  padding-left: 20px;
+}
+
+.comment-author > img {
+  display: none;
+}
+
+cite.fn {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.3em;
+}
+
+span.says {
+  display: none;
+}
+
+li.comment {
+  margin-top: 20px;
+}
+
+.comment-body {
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+
+.comment-body > .comment-meta {
+  font-size: 0.85em;
+}
+
+.commentlist .odd {
+  background-color: #f8f8f8;
+  outline: 2px #dfdfdf auto;
+  padding: 10px;
+}
+
+.commentlist .even {
+  background-color: #fff;
+  outline: 2px #ddd auto;
+  padding: 10px;
+}
+
+.comment img {
+  max-width: 100%;
+}
