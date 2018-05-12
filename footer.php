@@ -51,6 +51,7 @@
         <a href="https://twitter.com/inkubio/">Twitter</a>
         <a href="https://www.instagram.com/inkubio/">Instagram</a>
         <a href="https://www.linkedin.com/groups/8533430/profile">LinkedIn</a>
+        <a href="https://www.github.com/inkubio">GitHub</a>
       </div>
     </div>
 
