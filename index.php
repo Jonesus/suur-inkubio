@@ -10,6 +10,12 @@ get_header("deep"); ?>
 
 <!-- Begin section -->
 <div class="page-section bg-image upper" style="background-image: url(<?php bloginfo('template_directory');?>/assets/images/frontpage/circuit_background.svg);">
+  <div class="bg-video">
+    <video style="object-fit: fill;" autoplay muted playsinline loop>
+      <source src="<?php bloginfo('template_directory'); ?>/assets/videos/circuit.webm" type="video/webm">
+      <source src="<?php bloginfo('template_directory'); ?>/assets/videos/circuit.mp4" type="video/mp4">
+    </video>
+  </div>
   <div class="row padded-row">
     <div class="col-lg-12 title-text text-center">
       <h1 style="font-size: 8em;">Inkubio</h1>
