@@ -11,7 +11,7 @@ get_header("deep"); ?>
 <!-- Begin section -->
 <div class="page-section bg-image upper" style="background-image: url(<?php bloginfo('template_directory');?>/assets/images/frontpage/circuit_background.svg);">
   <div class="bg-video">
-    <video style="object-fit: fill; width: 100%" autoplay muted playsinline loop>
+    <video style="object-fit: fill;" autoplay muted playsinline loop>
       <source src="<?php bloginfo('template_directory'); ?>/assets/videos/circuit.webm" type="video/webm">
       <source src="<?php bloginfo('template_directory'); ?>/assets/videos/circuit.mp4" type="video/mp4">
     </video>
@@ -40,7 +40,6 @@ get_header("deep"); ?>
           class="rounded-circle img-fluid front-img"
           src="<?php bloginfo('template_directory'); ?>/assets/images/frontpage/happy-university-students-having-fun.jpg"
         >
-        <div class="shadow-overlay"></div>
       </div>
       <div class="col-sm-12 col-md-6 col-xl-5 order-md-4 order-3" style="text-align:center;">
         <p class="paragraph-text">
@@ -52,7 +51,6 @@ get_header("deep"); ?>
           class="rounded-circle img-fluid front-img"
           src="<?php bloginfo('template_directory'); ?>/assets/images/frontpage/serious-university-students-having-serious.jpg"
         >
-        <div class="shadow-overlay"></div>
       </div>
     </div>
 
