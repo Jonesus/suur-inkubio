@@ -16,6 +16,13 @@ get_header("deep"); ?>
       <source src="<?php bloginfo('template_directory'); ?>/assets/videos/circuit.mp4" type="video/mp4">
     </video>
   </div>
+
+  <?php if ($meta['dialog-text'][0]) : ?>
+  <div class="dialog upper">
+    <a href="<?php echo $meta['dialog-link'][0]; ?>"><?php echo $meta['dialog-text'][0]; ?></a>
+  </div>
+  <?php endif; ?>
+
   <div class="row padded-row">
     <div class="col-lg-12 title-text text-center">
       <h1 style="font-size: 8em;">Inkubio</h1>
