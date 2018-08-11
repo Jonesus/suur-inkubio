@@ -13,6 +13,7 @@
         'committee_en' => $committee['title_en'],
         'year' => $year,
         'show-committee-title' => true,
+        'show-member-emails' => false,
       ]
     );
   ?>

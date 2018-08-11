@@ -9,8 +9,10 @@
     </div>
     <div class="position-title text-center"><?php echo (get_page_language() == 'fi') ? $args['member']["title_fi"] : $args['member']['title_en']; ?></div>
     <div class="position-text text-center"><?php echo $args['member']["display_name"]?></div>
-    <a href="mailto:<?php echo $args['member']["email"]?>" class="position-text text-center">
-      <?php echo $args['member']["email"]?>
-    </a>
+    <?php if ($args['show-email']): ?>
+      <a href="mailto:<?php echo $args['member']["email"]?>" class="position-text text-center">
+        <?php echo $args['member']["email"]?>
+      </a>
+    <?php endif; ?>
   </div>
 </div>

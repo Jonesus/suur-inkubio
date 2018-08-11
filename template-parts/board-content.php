@@ -1,12 +1,13 @@
 <?php
+  $year = date("Y");
   $committee = 'Hallitus';
-  $year = date('Y');
 
   add_template(
     'committee-list.php',
     [
       'committee' => $committee,
       'year' => $year,
+      'show-member-emails' => true,
     ]
   );
 ?>
