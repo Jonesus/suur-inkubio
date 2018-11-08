@@ -449,6 +449,7 @@ function enqueue_comment_reply_script() {
 }
 add_action( 'comment_form_before', 'enqueue_comment_reply_script' );
 
+wp_enqueue_script( 'wp-api' );
 add_action('comment_text', 'comments_img_embed', 2);
 function comments_img_embed($comment) {
    $size = get_option('option_eiic');
