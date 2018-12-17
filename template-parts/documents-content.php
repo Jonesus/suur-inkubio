@@ -35,9 +35,16 @@
 
           <ul class="document-list">
             <?php foreach ($docs as $file) : 
+              $stripped_file = explode('.', $file)[0];
+              $file_parts = explode('-', $stripped_file);
+              $liite = substr($file_parts[2], -2);
+              $descriptor = false;
+              if (count($file_parts) == 4) {
+                $descriptor = str_replace('_', ' ', $file_parts[3]);
+              }
               if (ends_with($file, '.pdf')) :?>
                 <li class="document-item">
-                  <?php echo __('Liite ', 'suurinkubio').substr($file, -6, 2); ?>
+                  <?php echo __('Liite ', 'suurinkubio') . ' ' . $liite . ($descriptor ? ': ' . ucfirst($descriptor) : ''); ?>
                   <a href="<?php echo $docs_url.'/'.$year.'/'.$folder.'/'.$file; ?>">(pdf)</a>
                 </li>            
               <?php endif ; ?>
