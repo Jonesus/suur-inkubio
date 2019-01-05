@@ -2,7 +2,7 @@
 
 <?php
   $i = 0;
-  $now = 2017;
+  $now = date("Y") - 1;
   $committee = 'Hallitus';
   foreach (range($now, 2004) as $year) : ?>
 

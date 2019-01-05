@@ -1,7 +1,7 @@
 <ul class="folding-list" id="committeeaccordion2">
   <?php
     $i = 0;
-    $now = 2017;
+    $now = date("Y") - 1;
     foreach (range($now, 2008) as $year) : ?>
 
     <?php
