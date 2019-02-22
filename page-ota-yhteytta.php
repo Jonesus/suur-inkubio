@@ -25,7 +25,7 @@ get_header("deep"); ?>
         <div class="col-xl-4">
           <h2 class="column-text"><?php _e('Kiltahuoneen osoite', 'suurinkubio'); ?></h2>
           <p class="contact-col">
-            <?php _e('Inkubio ry:n kiltahuone', 'suurinkubio'); ?><br/>Maarintie 8<br/>02150 ESPOO
+            <?php _e('Inkubio ry:n kiltahuone', 'suurinkubio'); ?><br/>Otakaari 1, Y134<br/>02150 ESPOO
           </p>
         </div>
         <div class="col-xl-4">
