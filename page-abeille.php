@@ -62,7 +62,6 @@ get_header("deep"); ?>
 
 
 <div class="page-section">
-  <?php add_template('story-carousel.php', ['data' => $data]); ?>
 
   <div class="row justify-content-center row-fix">
     <!--white "A4-paper"-box -->
@@ -157,7 +156,10 @@ get_header("deep"); ?>
     </div><!-- End of first "A4-page" -->
   </div><!-- End of the row -->
   
-
+  <?php /* Sorry for this */ ?>
+  <div style="margin-top: -5vh">
+    <?php add_template('story-carousel.php', ['data' => $data]); ?>
+  </div>
 
   <div class="row justify-content-center row-fix">
     <!--white "A4-paper"-box -->
