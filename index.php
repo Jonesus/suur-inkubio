@@ -8,6 +8,37 @@ get_header("deep"); ?>
   $meta = get_post_meta($page->ID);
 ?>
 
+<?php
+  /* Data for carousel */
+  $data = [
+    [
+      'content' => "Olin eräänä kesänä Mongoliassa korjaamassa vioittuneita sairaalalaitteita vapaaehtoistyöntekijänä. Isäntäperheeni otti minut lämpimästi vastaan ja vei minut jopa tutustumaan heidän maaseudulla asuviin sukulaisiinsa! Opin paljon käytännön taitoja sairaalaelektroniikasta sekä paikallisesta kulttuurista.",
+      'signature' => "Annika – Lääketieteellisen tekniikan pääaineopiskelija & Reissubloggaaja",
+      'img' => 'annika.jpg',
+    ],
+    [
+      'content' => "Työssäni luon malleja lääketeollisuuden tuotantotiloista virtuaalitodellisuuteen erilaisten kehitysprojektien tarpeisiin. Suunniteltujen tilojen toteuttaminen VR-teknologian avulla mahdollistaa iteratiivisen suunnitteluprosessin, johon voidaan osallistuttaa henkilöitä ympäri organisaatiota.",
+      'signature' => "Sara – Complex Systems -pääaineopiskelija",
+      'img' => 'sara.jpg',
+    ],
+    [
+      'content' => "Transkraniaalisella magneettistimulaatiolla voidaan estää potilaan halvaantuminen aivoleikkauksessa. Toisena opiskeluvuotenani pääsin töihin HUS:ille tutkimaan aihetta, josta kirjoitin myös kandidaatintyöni.",
+      'signature' => "Pauliina – Lääketieteellisen tekniikan pääaineopiskelija & Kilta-aktiivi",
+      'img' => 'pauliina.jpg',
+    ],
+    [
+      'content' => "Kesätöissäni pääsin luomaan tekoälyyn pohjautuvan mallin, joka tunnistaa keuhkokuumeen röntgenkuvasta. Kehittämäni neuroverkko onnistui löytämään taudin yli 80 % tarkkuudella.",
+      'signature' => "Ali – Complex Systems -pääaineopiskelija & SYK-Alumni 2015",
+      'img' => 'ali.jpg',
+    ],
+    [
+      'content' => "Opintojeni jälkeen päädyin uraauurtavaa terveysteknologiaa kehittävään yritykseen, jossa olen mukana luomassa uutta menetelmää lasten astman diagnosointiin ja monitorointiin. Työssäni kehitän hengityksen analyysialgoritmeja sekä tutkin kliinistä dataa.",
+      'signature' => "Anton – Fuksikippari 2013",
+      'img' => 'anton.jpg',
+    ],
+  ]
+?>
+
 <!-- Begin section -->
 <div class="page-section bg-image upper" style="background-image: url(<?php bloginfo('template_directory');?>/assets/images/frontpage/circuit_background.svg);">
   <div class="bg-video">
@@ -37,7 +68,7 @@ get_header("deep"); ?>
   <div class="twist upper">
 
     <div class="row twist-content justify-content-center align-items-center">
-      <div class="col-sm-12 col-md-6 col-xl-5 order-1" style="text-align:center;">
+      <div class="col-sm-12 col-md-6 col-xl-5 order-1">
         <p class="paragraph-text">
           <?php echo $meta['column-1'][0]; ?>
         </p>
@@ -48,7 +79,7 @@ get_header("deep"); ?>
           src="<?php bloginfo('template_directory'); ?>/assets/images/frontpage/happy-university-students-having-fun.jpg"
         >
       </div>
-      <div class="col-sm-12 col-md-6 col-xl-5 order-md-4 order-3" style="text-align:center;">
+      <div class="col-sm-12 col-md-6 col-xl-5 order-md-4 order-3">
         <p class="paragraph-text">
           <?php echo $meta['column-2'][0]; ?>
         </p>
@@ -60,9 +91,11 @@ get_header("deep"); ?>
         >
       </div>
     </div>
+  
 
   </div>
+    
+  <?php add_template('story-carousel.php', ['data' => $data]); ?>
 </div>
 <!-- End section -->
-
 <?php get_footer(); ?>

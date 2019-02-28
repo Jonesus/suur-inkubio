@@ -9,6 +9,37 @@
   $meta = get_post_meta($page->ID);
 ?>
 
+<?php
+  /* Data for carousel */
+  $data = [
+    [
+      'content' => "Opintojen ohessa työskentelen sosiaalisen robotiikan parissa. Ohjelmoin erilaisia robotteja sekä suunnittelen uudenlaisia kohtaamisia ihmisen ja robotin välisessä kanssakäymisessä. Opintojen oheen on mahtunut myös vaihtovuosi Japanissa ja puhunkin japania sujuvasti!",
+      'signature' => "Niki – Complex Systems -pääaineopiskelija",
+      'img' => 'niki.jpg',
+    ],
+    [
+      'content' => "Opioidien, kuten morfiinin, konsentraation määrittäminen sensorilla veripisarasta mahdollistaa potilaan yksilöllisen ja tarkan kivunlievityksen sekä yliannostusten nopean diagnoosin. Tutkin kandidaatintyössäni puoliläpäiseviä kalvoja, joita hyödyntävien sensorien avulla verestä voidaan tunnistaa kipulääkemolekyylit selektiivisesti.",
+      'signature' => "Milja – Biosensing and Bioelectronics -pääaineopiskelija & kilta-aktiivi",
+      'img' => 'milja.jpg',
+    ],
+    [
+      'content' => "Työskentelen data scientistina edistyksellisiä geenitestejä tekevässä yrityksessä. Kyseinen yritys tekee geenidiagnostiikkaa eli testaa sairaaloiden ja lääkäriasemien tilauksesta, löytyykö potilailta perinnöllisiä sairauksia. Testausprosessin eri vaiheissa tarvitaan laboratoriotyöskentelyä, bioinformatiikkaa ja genetiikan asiantuntemusta ja prosessia avitetaan tietotekniikan ja data-analytiikan avulla.",
+      'signature' => "Inka – Bioinformaatioteknologia alumni 2017 & Killan puheenjohtaja 2016",
+      'img' => 'inka.jpg',
+    ],
+    [
+      'content' => "Olen opiskellut bioinformaatioteknologiaa ja pääaineenani on ollut lääketieteellinen tekniikka. Työn alla on tällä hetkellä väitöskirja vastasyntyneiden lasten automatisoidusta EGG analyysistä, mutta tämä on nyt tauolla, sillä työskentelen Kotkassa sädehoidon parissa erikoistuvana fyysikkona.",
+      'signature' => "Karoliina – Bioinformaatioteknologia alumni 2016",
+      'img' => 'karoliina.jpg',
+    ],
+    [
+      'content' => "Opiskelu on muutakin kuin laskareita ja luentoja. Kaksi vuotta killan hallituksessa opettivat projektinhallintaa ja ryhmätyöskentelytaitoja. Puheenjohtajana sain myös itselleni tärkeää kokemusta johtamisesta.",
+      'signature' => "Tuomas – Complex systems pääaineopiskelija & Killan puheenjohtaja 2017",
+      'img' => 'tuomas.jpg',
+    ],
+  ]
+?>
+
 <!--Jumbotron-->
 <div class="jumbotron">
   <div class="container">
@@ -37,7 +68,7 @@
       </div>
     </div>
     <div class="row twist-content justify-content-center">
-      <div class="col-sm-11 col-md-11 col-lg-8 col-xl-6 text-center">
+      <div class="col-sm-11 col-md-11 col-lg-8 col-xl-6">
         <p>
           <?php echo $meta['section-1-text'][0]; ?>
         </p>
@@ -45,7 +76,7 @@
     </div>     
   </div><!--End of twist upper-->
 
-
+  <?php add_template('story-carousel.php', ['data' => $data]); ?>
 
   <!--Card-deck section-->
   <div class="container section2"> 
@@ -153,13 +184,13 @@
       <!--First row inside white box-->
       <div class="row justify-content-center">
         <!--left text-->
-        <div class="col-sm-12 col-md-6 col-xl-5 text-justify">
+        <div class="col-sm-12 col-md-6 col-xl-5">
           <p class="paragraph-text">
             <?php echo $meta['section-2-subtext-1'][0]; ?>
           </p>
         </div>
         <!--right text-->
-        <div class="col-sm-12 col-md-6 col-xl-5 text-justify">
+        <div class="col-sm-12 col-md-6 col-xl-5">
           <p class="paragraph-text">
             <?php echo $meta['section-2-subtext-2'][0]; ?>
           </p>
@@ -174,7 +205,7 @@
       </div>
       <!--bottom text-->
       <div class="row justify-content-center">
-        <div class="col-sm-12 col-md-9 col-lg-7 col-xl-5 text-justify">
+        <div class="col-sm-12 col-md-9 col-lg-7 col-xl-5">
           <p class="paragraph-text">
             <?php echo $meta['section-2-subtitle-1-text'][0]; ?>
           </p>

@@ -10,17 +10,48 @@ get_header("deep"); ?>
   $meta = get_post_meta($page->ID);
 ?>
 
+<?php
+  /* Data for carousel */
+  $data = [
+    [
+      'content' => "Teen diplomityötäni syöpäkudoksen luokittelusta leikkaussavumittausten avulla. Tavoitteena on kehittää älykäs kirurgiveitsi, joka tunnistaa reaaliaikaisesti leikattavan kudoksen, jotta esimerkiksi syöpäkudos voitaisiin poistaa tarkemmin leikkauksessa.",
+      'signature' => "Anna – Maisteriopiskelija & Kilta-aktiivi",
+      'img' => 'anna.jpg',
+    ],
+    [
+      'content' => "CERNin hiukkasilmaisimet keräävät vuosittain valtava määrä dataa hadronien törmäyksistä etsiessään vastauksia perustavanlaatuisiin kysymyksiin maailmankaikkeudesta. Tarkat tutkimukset vaativat tarkkaa rajausta ja paljon datan suodattamista. Koulutin syväoppivaa neuroverkkoa analysoimaan hiukkastörmäyksiä itsenäisesti.",
+      'signature' => "Petra – Kandiopiskelija & Fuksikapteeni 2018",
+      'img' => 'petra.jpg',
+    ],
+    [
+      'content' => "Rikospaikalta löydettyjen langanpätkien ja karvojen avulla selvitetään epäiltyjen liikkeitä. Poliisi käyttää kuiduista saatua dataa todistusaineistona. Tutkin kandidaatintyössäni spektrometrien laajempia sovellusmahdollisuuksia kuitututkimuksissa.",
+      'signature' => "Antti – Kandiopiskelija",
+      'img' => 'anttij.jpg',
+    ],
+    [
+      'content' => "Pääsin kesätyössä opettamaan tekoälyä eli kehittämään erilaisia tietokonealgoritmeja. Niiden avulla voidaan tehdä esimerkiksi patologien tarvitsemia kuva-analyysejä kudosnäytteistä.",
+      'signature' => "Linn – Kandiopiskelija ",
+      'img' => 'linn.jpg',
+    ],
+    [
+      'content' => "Kuvantaminen on tärkeä työkalu leikkausten suunnittelussa. Kandidaatintyössäni pääsin seuraamaan aivoleikkauksia sekä pohtimaan konenäön mahdollisia sovelluksia neurokirurgiassa.",
+      'signature' => "Antti – Complex Systems -pääaineopiskelija",
+      'img' => 'anttia.jpg',
+    ],
+  ]
+?>
+
 <!-- Begin section -->
 <!--Jumbotron-->
 <div class="jumbotron">
   <div class="container">
     <div class ="row">
-      <div class="col-12 title-text text-center">
+      <div class="col-12 title-text">
 
         <h1 class = "jumbotron-header">
           <?php echo $meta['jumbotron-header'][0]; ?>
         </h1>   
-        <p class="jumbotron-text text-justify">
+        <p class="jumbotron-text">
           <?php echo $meta['jumbotron-text'][0]; ?>
         </p>
 
@@ -30,8 +61,9 @@ get_header("deep"); ?>
 </div><!--jumbotron end-->
 
 
-
 <div class="page-section">
+  <?php add_template('story-carousel.php', ['data' => $data]); ?>
+
   <div class="row justify-content-center row-fix">
     <!--white "A4-paper"-box -->
     <div class="col-sm-12 col-md-12 col-lg-10 col-xl-10 content-page">
@@ -45,7 +77,7 @@ get_header("deep"); ?>
       
       <!--First row inside white box-->
       <div class="row justify-content-center">
-        <div class="col-sm-12 col-md-10 col-lg-8 col-xl-6 text-justify">
+        <div class="col-sm-12 col-md-10 col-lg-8 col-xl-6">
           <p class="paragraph-text">
             <?php echo $meta['section-1-text'][0]; ?>
           </p>
@@ -55,7 +87,7 @@ get_header("deep"); ?>
       <!--Second row inside white box-->        
       <div class="row justify-content-center">
         <!--left text-->
-        <div class="col-sm-12 col-md-5 col-xl-5 order-1 text-justify">
+        <div class="col-sm-12 col-md-5 col-xl-5 order-1">
           <h3 class="text-center header3"><?php echo $meta['section-1-subtitle-1'][0]; ?></h3>
           <p class="paragraph-text">
             <?php echo $meta['section-1-subtitle-1-text'][0]; ?>
@@ -63,7 +95,7 @@ get_header("deep"); ?>
         </div>
         
         <!--right text-->
-        <div class="col-sm-12 col-md-5 col-xl-5 order-3 order-md-2 text-justify">
+        <div class="col-sm-12 col-md-5 col-xl-5 order-3 order-md-2">
           <h3 class="text-center header3"><?php echo $meta['section-1-subtitle-2'][0]; ?></h3>
           <p class="paragraph-text">
             <?php echo $meta['section-1-subtitle-2-text'][0]; ?>
@@ -139,7 +171,7 @@ get_header("deep"); ?>
       
       <!--First row inside white box-->
       <div class="row justify-content-center">
-        <div class="col-sm-12 col-md-10 col-lg-8 col-xl-6 text-justify">
+        <div class="col-sm-12 col-md-10 col-lg-8 col-xl-6">
           <p class="paragraph-text">
             <?php echo $meta['section-2-text'][0]; ?>
           </p>
@@ -149,19 +181,19 @@ get_header("deep"); ?>
       <!--Second row inside white box-->        
       <div class="row justify-content-center">
         <!--left text-->
-        <div class="col-lg-12 col-xl-4 text-justify">
+        <div class="col-lg-12 col-xl-4">
           <p class="paragraph-text">
             <?php echo $meta['section-2-subtext-1'][0]; ?>
           </p>
         </div>
         <!--middle text-->
-        <div class="col-lg-12 col-xl-4 text-justify">
+        <div class="col-lg-12 col-xl-4">
           <p class="paragraph-text">
             <?php echo $meta['section-2-subtext-2'][0]; ?>
           </p>
         </div>
         <!--right text-->
-        <div class="col-lg-12 col-xl-4 text-justify">
+        <div class="col-lg-12 col-xl-4">
           <p class="paragraph-text">
             <?php echo $meta['section-2-subtext-3'][0]; ?>
           </p>
@@ -195,18 +227,18 @@ get_header("deep"); ?>
         </div>
       </div>
         
-      <div class="col-sm-12 col-md-12 col-xl-9 text-justify">
+      <div class="col-sm-12 col-md-12 col-xl-9">
         <p class="paragraph-text">
           <?php echo $meta['section-3-text'][0]; ?>
         </p>
       </div>
-      <div class="col-sm-12 col-md-12 col-xl-12 text-justify text-center">
+      <div class="col-sm-12 col-md-12 col-xl-12 text-center">
         <a class="pill-button" href="<?php echo $meta['freshmen-link'][0]; ?>"><?php _e('Fukseille', 'suurinkubio'); ?></a>
       </div>
         
     </div>
   </div>     
-  
+
 </div>
 <!-- End section -->
 
