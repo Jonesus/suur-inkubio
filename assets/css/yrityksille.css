@@ -63,36 +63,65 @@
     {
         -webkit-perspective: 1000px;
         perspective: 1000px;
-        -webkit-transition: 0.6s;
-        transition: 0.6s;
+        display: inline-block;
+        margin: 25px 25px;
+        width: 325px;
+        height: 325px;
+    }
+
+    .flip-container-inner {
+        position: relative;
+        -webkit-transition: 0.8s;
+        transition: 0.8s;
         -webkit-transform-style: preserve-3d;
         transform-style: preserve-3d;
-        margin: 25px 25px;
-        box-shadow: 0 5px 10px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        width: 100%;
+        height: 100%;
     }
     
-    .flip-container:hover
+    .flip-container:hover .front, .flip-container:hover .back
     {
         box-shadow: 3px 20px 35px rgba(0,0,0,0.30), 0 6px 6px rgba(0,0,0,0.50);
     }
     
 
-    .flip1.hover, .flip2.hover, .flip3.hover, .flip4.hover, .flip5.hover, .flip6.hover
+    .hover>.flip-container-inner, .flip-container:hover>.flip-container-inner
     {
-	-webkit-transform: rotateY(180deg);
-	transform: rotateY(180deg);
+	    -webkit-transform: rotateY(180deg);
+	    transform: rotateY(180deg);
     }
     
-    .flip-container, .front, .back 
+    .front, .back 
     {
-        width: 325px;
-        height: 325px;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -webkit-transition: 0.6s;
+        transition: 0.6s;
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
         background-color: white;
         border-radius: 7px;
-        position: relative;
-        
+        box-shadow: 0 5px 10px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     }
     
+    .front
+    {
+        -webkit-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+        z-index: 2;
+    }
+    
+    .back
+    {
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+    }
+
     h4 
     {
         margin-top: 10px;
@@ -102,32 +131,15 @@
         margin-bottom: 5px;
     }
     
-    .front, .back 
-    {
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-        position: absolute;
-        top:0;
-        left: 0;
-    }
-    
-    .front
-    {
-        -webkit-transform: rotateY(0deg);
-        transform: rotateY(0deg);
-    }
-    
     .image
     {
         height: 270px;
+        max-width: 100%;
         padding: 10px 50px;
     }
-    
-    .back
-    {
-        -webkit-transform: rotateY(180deg);
-        transform: rotateY(180deg);
-	z-index: 9999;
+
+    .flip-container img {
+        max-width: 100%;
     }
     
     .para 
