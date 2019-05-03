@@ -465,4 +465,9 @@ function comments_img_embed($comment) {
    );
 }
 
+register_rest_field( 'page', 'metadata', array(
+    'get_callback' => function ( $data ) {
+        return get_post_meta( $data['id'], '', '' );
+    }, ));
+
 ?>
