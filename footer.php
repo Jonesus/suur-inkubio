@@ -15,11 +15,6 @@
         </a>
       </div>
       <div class="col-9 col-sm-6 col-md-5 col-lg-4 col-xl-3 align-items-center">
-        <a href="https://www.roche.com/">
-          <img class="img-fluid" src="<?php bloginfo('template_directory');?>/assets/images/logos/roche.svg">
-        </a>
-      </div>
-      <div class="col-9 col-sm-6 col-md-5 col-lg-4 col-xl-3 align-items-center">
         <a href="http://futurice.com/">
           <img class="img-fluid" src="<?php bloginfo('template_directory');?>/assets/images/logos/futurice.svg">
         </a>
