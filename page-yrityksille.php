@@ -386,7 +386,7 @@
       <?php
         $yrityssuhdemestari = get_position_filler("Yrityssuhdemestari");
         $tiedotusmestari = get_position_filler("Tiedotusmestari");
-        $excursiovastaava = get_position_filler("Excursiovastaava");
+        $excursiovastaava = get_position_filler("Excursiomestari");
       ?>
       <div class="row twist-content justify-content-center align-items-center">
         <div class="col-xl-2 col-lg-5 col-md-6 col-7 order-xl-1 order-2 text-center text-justify fig">
