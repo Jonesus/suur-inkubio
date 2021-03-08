@@ -43,6 +43,7 @@ get_header("deep"); ?>
                     <div class="post-excerpt">
                       <?php
                         $text = $post['post_content'];
+                        $text = strip_tags($text);
                         $maxPos = 150;
                         if (strlen($text) > $maxPos) {
                           $lastPos = ($maxPos - 3) - strlen($text);
