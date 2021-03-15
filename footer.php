@@ -30,8 +30,8 @@
         </a>
       </div>
       <div class="col-9 col-sm-6 col-md-5 col-lg-4 col-xl-3 align-items-center">
-        <a href="https://www.academicwork.fi/">
-          <img class="img-fluid" src="<?php bloginfo('template_directory');?>/assets/images/logos/academicwork.svg">
+        <a href="https://www.medaffcon.fi/">
+          <img class="img-fluid" src="<?php bloginfo('template_directory');?>/assets/images/logos/medaffcon.svg">
         </a>
       </div>
       <div class="col-9 col-sm-6 col-md-5 col-lg-4 col-xl-3 align-items-center">
